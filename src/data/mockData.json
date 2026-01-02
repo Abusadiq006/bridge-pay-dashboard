@@ -1,0 +1,29 @@
+[
+    {
+      "id": "1",
+      "customer": "Fateemah Aliyu",
+      "email": "fateemah@example.com",
+      "amount": "₦250,000.00",
+      "date": "May 24, 2024",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "2",
+      "customer": "Freeman Musa",
+      "email": "musa.free@gmail.com",
+      "amount": "₦12,500.00",
+      "date": "May 23, 2024",
+      "status": "Processing",
+      "type": "Outward"
+    },
+    {
+      "id": "3",
+      "customer": "Zainab Adamu",
+      "email": "z.adamu@work.co",
+      "amount": "₦1,200,000.00",
+      "date": "May 22, 2024",
+      "status": "Canceled",
+      "type": "Inward"
+    }
+  ]
