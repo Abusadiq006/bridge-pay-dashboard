@@ -1,12 +1,19 @@
-import { useState } from 'react'
-import { Wallet, CheckCircle, Clock, XCircle } from 'lucide-react'; // Import icons
+import { useState } from 'react';
+import { Wallet, CheckCircle, Clock, XCircle } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
-import StatCard from './components/StatCard'; // Import the new component
+import StatCard from './components/StatCard';
+import FilterTabs from './components/FilterTabs';
+import TransactionTable from './components/TransactionTable';
+
+// Importing the mock data we created earlier
+import mockData from './data/mockData.json';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('all');
 
+  // 1. KPI Stats Data
   const stats = [
     {
       title: "Total Amount",
@@ -42,27 +49,51 @@ function App() {
     }
   ];
 
+  // 2. Filter Logic
+  // This filters the imported JSON data whenever the activeTab changes
+  const filteredData = activeTab === 'all' 
+    ? mockData 
+    : mockData.filter(item => item.status === activeTab);
+
   return (
-    <div className="flex min-h-screen font-rethink">
+    <div className="flex min-h-screen font-rethink bg-[#F9FAFB]">
+      {/* Sidebar - Handles its own mobile/desktop visibility via props */}
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
-      <div className="flex-1 flex flex-col min-w-0 bg-[#F9FAFB]">
+      <div className="flex-1 flex flex-col min-w-0">
+        {/* Header - Receives the function to open the sidebar on mobile */}
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
         
         <main className="p-4 md:p-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-xl font-semibold md:hidden mb-6">Payment Request History</h2>
             
-            {/* KPI Stats Grid */}
+            {/* Page Title (Only visible on mobile as it's in the header on desktop) */}
+            <h2 className="text-xl font-semibold md:hidden mb-6 text-slate-900">
+              Payment Request History
+            </h2>
+            
+            {/* KPI Stats Grid - Responsive 1, 2, or 4 columns */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {stats.map((stat, index) => (
                 <StatCard key={index} {...stat} />
               ))}
             </div>
 
-            {/* Table Section placeholder */}
-            <div className="bg-white rounded-2xl border border-gray-100 min-h-[400px]">
-               {/* Next step: Table logic goes here */}
+            {/* Main Transaction Section */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 md:p-6">
+              
+              {/* Filter Navigation */}
+              <FilterTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+              
+              {/* Conditional Rendering: Table or Empty State */}
+              {filteredData.length > 0 ? (
+                <TransactionTable data={filteredData} />
+              ) : (
+                <div className="py-20 text-center">
+                  <p className="text-gray-400">No transactions found for "{activeTab}".</p>
+                </div>
+              )}
+              
             </div>
           </div>
         </main>
