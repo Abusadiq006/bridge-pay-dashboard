@@ -17,7 +17,7 @@ function App() {
   const stats = [
     {
       title: "Total Amount",
-      value: "₦4,250,000.00",
+      value: "$4,250,000.00",
       trend: "12%",
       trendType: "up",
       icon: Wallet,

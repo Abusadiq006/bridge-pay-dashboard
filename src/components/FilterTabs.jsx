@@ -1,8 +1,8 @@
 const FilterTabs = ({ activeTab, setActiveTab }) => {
     const tabs = [
-      { id: 'all', label: 'All Requests' },
-      { id: 'Completed', label: 'Completed' },
-      { id: 'Processing', label: 'Processing' },
+      { id: 'all', label: 'All Requests (241)' },
+      { id: 'Completed', label: 'Completed (200)' },
+      { id: 'Processing', label: 'Processing ' },
       { id: 'Canceled', label: 'Canceled' }
     ];
   
