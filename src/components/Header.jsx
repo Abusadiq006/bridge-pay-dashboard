@@ -22,7 +22,7 @@ const Header = ({ onMenuClick }) => {
         
         <button className="p-2 text-gray-400 hover:text-gray-600 relative">
           <Settings size={20} />
-          <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
+          <span className="absolute top-2 right-2 w-2 h-2 bg-blue-500 rounded-full border-2 border-white"></span>
         </button>
 
         <button className="bg-brand-purple text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-purple-700 transition-all shadow-sm shadow-purple-200">
