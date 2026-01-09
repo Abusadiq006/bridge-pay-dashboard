@@ -1,10 +1,13 @@
-import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X } from 'lucide-react';
+import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X, Plus, Speech, ChartSplineIcon, Text } from 'lucide-react';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
   const navItems = [
+    { icon: Home, label: 'Home', active: false},
     { icon: LayoutDashboard, label: 'Dashboard', active: true },
-    { icon: CreditCard, label: 'Payment Requests', active: false },
-    { icon: Settings, label: 'Settings', active: false },
+    { icon: CreditCard, label: 'Comm and Payouts', active: false },
+    { icon: Plus, label: 'Add Request', active: false },
+    { icon: Speech, label:'Market', active: false },
+    { icon: Text, label:'Support Chat', active: false }
   ];
 
   return (
