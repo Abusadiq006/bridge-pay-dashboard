@@ -3,7 +3,7 @@
       "id": "1",
       "customer": "Fateemah Aliyu",
       "email": "fateemah@example.com",
-      "amount": "₦250,000.00",
+      "amount": "$250.00",
       "date": "May 24, 2024",
       "status": "Completed",
       "type": "Inward"
@@ -12,7 +12,7 @@
       "id": "2",
       "customer": "Freeman Musa",
       "email": "musa.free@gmail.com",
-      "amount": "₦12,500.00",
+      "amount": "$12,500.00",
       "date": "May 23, 2024",
       "status": "Processing",
       "type": "Outward"
@@ -21,9 +21,171 @@
       "id": "3",
       "customer": "Zainab Adamu",
       "email": "z.adamu@work.co",
-      "amount": "₦1,200,000.00",
+      "amount": "$12.00",
       "date": "May 22, 2024",
       "status": "Canceled",
       "type": "Inward"
+    },
+    {
+      "id": "4",
+      "customer": "Raphael John",
+      "email": "Raphael@dj.com",
+      "amount": "$328.75",
+      "date": "Jan 5th, 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "5",
+      "customer": "Karofi Gilma",
+      "email": "karofi@farm.com",
+      "amount": "$2832.00",
+      "date": "Jan 30th 2025",
+      "status": "Processing",
+      "type": "Inward"
+    },
+    {
+      "id": "6",
+      "customer": "Halal Boy Maitashi",
+      "email": "halalmaitashi@farm.com",
+      "amount": "$9263.95",
+      "date": "Feb 9th 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "7",
+      "customer": "Kayode AbdulGanu",
+      "email": "kayode@gmail.com",
+      "amount": "$635.12",
+      "date": "Feb 12, 2025",
+      "status": "Canceled",
+      "type": "Outward"
+    },
+    {
+      "id": "1",
+      "customer": "Fateemah Aliyu",
+      "email": "fateemah@example.com",
+      "amount": "$25.00",
+      "date": "May 24, 2024",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "2",
+      "customer": "Freeman Musa",
+      "email": "musa.free@gmail.com",
+      "amount": "$50.00",
+      "date": "May 23, 2024",
+      "status": "Processing",
+      "type": "Outward"
+    },
+    {
+      "id": "3",
+      "customer": "Zainab Adamu",
+      "email": "z.adamu@work.co",
+      "amount": "$1,200.00",
+      "date": "May 22, 2024",
+      "status": "Canceled",
+      "type": "Inward"
+    },
+    {
+      "id": "4",
+      "customer": "Raphael John",
+      "email": "Raphael@dj.com",
+      "amount": "$328.75",
+      "date": "Jan 5th, 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "5",
+      "customer": "Karofi Gilma",
+      "email": "karofi@farm.com",
+      "amount": "$2832.00",
+      "date": "Jan 30th 2025",
+      "status": "Processing",
+      "type": "Inward"
+    },
+    {
+      "id": "6",
+      "customer": "Halal Boy Maitashi",
+      "email": "halalmaitashi@farm.com",
+      "amount": "$9263.95",
+      "date": "Feb 9th 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "7",
+      "customer": "Kayode AbdulGanu",
+      "email": "kayode@gmail.com",
+      "amount": "$635.12",
+      "date": "Feb 12, 2025",
+      "status": "Canceled",
+      "type": "Outward"
+    },
+    {
+      "id": "1",
+      "customer": "Fateemah Aliyu",
+      "email": "fateemah@example.com",
+      "amount": "$90.00",
+      "date": "May 24, 2024",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "2",
+      "customer": "Freeman Musa",
+      "email": "musa.free@gmail.com",
+      "amount": "$100.00",
+      "date": "May 23, 2024",
+      "status": "Processing",
+      "type": "Outward"
+    },
+    {
+      "id": "3",
+      "customer": "Zainab Adamu",
+      "email": "z.adamu@work.co",
+      "amount": "$700.00",
+      "date": "May 22, 2024",
+      "status": "Canceled",
+      "type": "Inward"
+    },
+    {
+      "id": "4",
+      "customer": "Raphael John",
+      "email": "Raphael@dj.com",
+      "amount": "$328.75",
+      "date": "Jan 5th, 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "5",
+      "customer": "Karofi Gilma",
+      "email": "karofi@farm.com",
+      "amount": "$2832.00",
+      "date": "Jan 30th 2025",
+      "status": "Processing",
+      "type": "Inward"
+    },
+    {
+      "id": "6",
+      "customer": "Halal Boy Maitashi",
+      "email": "halalmaitashi@farm.com",
+      "amount": "$9263.95",
+      "date": "Feb 9th 2025",
+      "status": "Completed",
+      "type": "Inward"
+    },
+    {
+      "id": "7",
+      "customer": "Kayode AbdulGanu",
+      "email": "kayode@gmail.com",
+      "amount": "$635.12",
+      "date": "Feb 12, 2025",
+      "status": "Canceled",
+      "type": "Outward"
     }
   ]
