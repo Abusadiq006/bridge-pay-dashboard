@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Features from '../components/Features';
+import TrustSection from '../components/TrustSection';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
             Go to Dashboard
           </Link>
           <Features />
+          <TrustSection />
         </div>
       </nav>
 
