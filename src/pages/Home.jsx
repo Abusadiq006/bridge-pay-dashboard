@@ -14,9 +14,8 @@ const Home = () => {
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
             Go to Dashboard
           </Link>
-          <Features />
-          <TrustSection />
         </div>
+        <Features />
       </nav>
 
       {/* Hero Section */}
@@ -33,6 +32,7 @@ const Home = () => {
           <Link to="/dashboard" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
             View Dashboard
           </Link>
+          <TrustSection />
         </div>
       </div>
     </div>
