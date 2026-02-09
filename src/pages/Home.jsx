@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Features from '../components/Features';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
             Go to Dashboard
           </Link>
+          <Features />
         </div>
       </nav>
 
