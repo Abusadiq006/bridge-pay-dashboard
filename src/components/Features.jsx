@@ -7,6 +7,10 @@ const features = [
         icon: Zap,
         title: "Instant Vendor Payments",
         description: "Pay wedding vendors instantly with zero delays, ensuring smooth transactrions."
+    },
+    {
+        icon: PieChart,
+        title: ""
     }
 ]
 
