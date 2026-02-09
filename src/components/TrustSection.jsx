@@ -22,6 +22,13 @@ const TrustSection = () => {
             <h3 className="text-xl font-semibold mb-2">Secure Transactions</h3>
             <p className="text-gray-500 text-sm">All transactions are encrypted and monitored 24/7.</p>
           </div>
+          <div className="flex flex-col items-center">
+            <div className="bg-purple-100 text-purple-600 p-4 rounded-full mb-5">
+              <Lock size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Data Encryption</h3>
+            <p className="text-gray-500 text-sm">We use AES-256 encryption to protect your sensitive data.</p>
+          </div>
           
         </div>
 
