@@ -14,7 +14,16 @@ const TrustSection = () => {
         </p>
 
         {/* Security Feature Grid */}
-     
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="flex flex-col items-center">
+            <div className="bg-purple-100 text-purple-600 p-4 rounded-full mb-5">
+              <ShieldCheck size={32} />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Secure Transactions</h3>
+            <p className="text-gray-500 text-sm">All transactions are encrypted and monitored 24/7.</p>
+          </div>
+          
+        </div>
 
         {/* Partner Logos Section - Placeholder */}
         <div className="border-t border-gray-100 pt-16">
