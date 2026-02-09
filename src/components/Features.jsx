@@ -16,6 +16,7 @@ const features = [
     {
         icon: ShieldCheck,
         title: "Bank-Grade Security",
+        description: "Your financial data is encrypted and protected with industry-standard security."
     }
 ]
 
