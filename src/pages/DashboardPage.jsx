@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Wallet, CheckCircle, Clock, XCircle, Search } from 'lucide-react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import StatCard from './components/StatCard';
-import FilterTabs from './components/FilterTabs';
-import TransactionTable from './components/TransactionTable';
+import Sidebar from '../components/Sidebar';
+import Header from '../components/Header';
+import StatCard from '../components/StatCard';
+import FilterTabs from '../components/FilterTabs';
+import TransactionTable from '../components/TransactionTable';
 
 // Import our mock data
-import mockData from './data/mockData.json';
+import mockData from '../data/mockData.json';
 
 function DashboardPage () {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
