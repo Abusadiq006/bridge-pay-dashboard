@@ -32,6 +32,14 @@ const Footer = () => {
             <li><a href="#" className="hover:text-white">Security</a></li>
           </ul>
         </div>
+
+        <div>
+          <h4 className="font-semibold text-white mb-4">Support</h4>
+          <ul className="space-y-3 text-sm">
+            <li><a href="#" className="hover:text-white">Help Center</a></li>
+            <li><a href="#" className="hover:text-white">Vendor Portal</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
