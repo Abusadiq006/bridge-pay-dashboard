@@ -41,6 +41,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-6 text-sm text-center text-gray-500">
+          &copy; {new Date().getFullYear()} BridgePay. All rights reserved.
+        </div>
+      </div>
     </footer>
   );
 };
