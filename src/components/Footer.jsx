@@ -23,6 +23,15 @@ const Footer = () => {
             <li><a href="#" className="hover:text-white">Contact</a></li>
           </ul>
         </div>
+
+        <div>
+          <h4 className="font-semibold text-white mb-4">Legal</h4>
+          <ul className="space-y-3 text-sm">
+            <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-white">Terms of Service</a></li>
+            <li><a href="#" className="hover:text-white">Security</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
