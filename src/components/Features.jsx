@@ -11,6 +11,7 @@ const features = [
     {
         icon: PieChart,
         title: "Budget Tracking",
+        description: "Keep track of all your expenses in one place and stay within your budget."
     }
 ]
 
