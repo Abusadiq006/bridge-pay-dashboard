@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Features from '../components/Features';
 import TrustSection from '../components/TrustSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
             View Dashboard
           </Link>
           <TrustSection />
+          <Footer />
         </div>
       </div>
     </div>

@@ -13,6 +13,16 @@ const Footer = () => {
             Secure payments for the modern bride. Managing wedding finances made simple.
           </p>
         </div>
+
+        {/* Links Columns */}
+        <div>
+          <h4 className="font-semibold text-white mb-4">Company</h4>
+          <ul className="space-y-3 text-sm">
+            <li><a href="#" className="hover:text-white">About Us</a></li>
+            <li><a href="#" className="hover:text-white">Careers</a></li>
+            <li><a href="#" className="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   );
