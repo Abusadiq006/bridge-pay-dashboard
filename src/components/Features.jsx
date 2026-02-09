@@ -10,7 +10,7 @@ const features = [
     },
     {
         icon: PieChart,
-        title: ""
+        title: "Budget Tracking",
     }
 ]
 
