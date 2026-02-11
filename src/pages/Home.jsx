@@ -34,6 +34,16 @@ const Home = () => {
               >
                 Add Request
               </button>
+              <button
+              onClick={() => setActiveView('payout')}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                activeView === 'payout'
+                ? 'bg-white text-purple-600 shadow'
+                : 'text-gray-600 hover:text-gray-900'
+              }`}
+              >
+                Market
+              </button>
             </div>
           </div>
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
