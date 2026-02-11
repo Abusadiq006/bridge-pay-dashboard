@@ -15,7 +15,8 @@ const Home = () => {
             <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
               <a href="#" className="hover:text-purple-600">Comm and Payout</a>
               <a href="#" className="hover:text-purple-600">Add Request</a>
-              <a href="#" className="hover:text-purple-600"><Market></Market></a>
+              <a href="#" className="hover:text-purple-600">Market</a>
+              <a href="#" className="hover:text-purple-600">Support Chat</a>
             </div>
           </div>
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
