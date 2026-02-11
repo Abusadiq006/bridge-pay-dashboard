@@ -11,7 +11,11 @@ const Home = () => {
       {/* Basic Navbar */}
       <nav className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-purple-600">BridgePay</div>
+          <div className="text-2xl font-bold text-purple-600">BridgePay
+            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+              <a href="#" className="hover:text-purple-600">Comm and Payout</a>
+            </div>
+          </div>
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
             Go to Dashboard
           </Link>
