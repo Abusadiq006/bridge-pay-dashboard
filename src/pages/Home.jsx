@@ -1,23 +1,28 @@
 // src/pages/Home.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Features from '../components/Features';
 import TrustSection from '../components/TrustSection';
 import Footer from '../components/Footer';
 
 const Home = () => {
+  const [activeView, setActiveView] = useState('payout')
   return (
     <div className="min-h-screen bg-white">
       {/* Basic Navbar */}
       <nav className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-purple-600">BridgePay
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-              <a href="#" className="hover:text-purple-600">Comm and Payout</a>
-              <a href="#" className="hover:text-purple-600">Add Request</a>
-              <a href="#" className="hover:text-purple-600">Market</a>
-              <a href="#" className="hover:text-purple-600">Support Chat</a>
-              <a href="#" className="hover:text-purple-600">Logout</a>
+            <div className="bg-gray-100 p-1 rounded-full flex gap-1">
+              <button
+              onClick={() => setActiveView('payout')}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                activeView === 'payout'
+                ? 'bg-white text-purple-600 shadow'
+                : 'text-gray-600 hover:text-gray-900'
+              }`}
+              >
+                Comm and Payouts</button>
             </div>
           </div>
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
