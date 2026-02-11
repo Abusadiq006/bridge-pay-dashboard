@@ -1,4 +1,6 @@
 import { useState } from 'react';
+// 1. Import Link from react-router-dom
+import { Link, useNavigate } from 'react-router-dom';
 import { Wallet, CheckCircle, Clock, XCircle, Search } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
@@ -9,12 +11,13 @@ import TransactionTable from '../components/TransactionTable';
 // Import our mock data
 import mockData from '../data/mockData.json';
 
-function DashboardPage () {
+function DashboardPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate(); // Hook for programmatic navigation
 
-  // 1. KPI Stats Data (Updated with values from your image)
+  // 1. KPI Stats Data (Updated with navigation paths)
   const stats = [
     {
       title: "TOTAL AMOUNT PROCESSED",
@@ -22,7 +25,8 @@ function DashboardPage () {
       trend: "12%",
       trendType: "up",
       icon: Wallet,
-      iconBg: "bg-gray-100"
+      iconBg: "bg-gray-100",
+      link: "/dashboard/analytics" // Add link to stats
     },
     {
       title: "PAYMENT SUCCESS RATE",
@@ -30,7 +34,8 @@ function DashboardPage () {
       trend: "2.1%",
       trendType: "up",
       icon: CheckCircle,
-      iconBg: "bg-gray-100"
+      iconBg: "bg-gray-100",
+      link: "/dashboard/reports"
     },
     {
       title: "AVERAGE PROCESSING TIME",
@@ -38,7 +43,8 @@ function DashboardPage () {
       trend: "5%",
       trendType: "down",
       icon: Clock,
-      iconBg: "bg-gray-100"
+      iconBg: "bg-gray-100",
+      link: "/dashboard/analytics"
     },
     {
       title: "COMMISSION EARNED",
@@ -46,7 +52,8 @@ function DashboardPage () {
       trend: "0.4%",
       trendType: "down",
       icon: XCircle,
-      iconBg: "bg-gray-100"
+      iconBg: "bg-gray-100",
+      link: "/dashboard/commissions"
     }
   ];
 
@@ -61,9 +68,11 @@ function DashboardPage () {
   return (
     <div className="flex min-h-screen font-rethink bg-[#F9FAFB]">
       
+      {/* 2. Pass navigate to Sidebar if needed, or wrap Sidebar items in Links */}
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
       <div className="flex-1 flex flex-col min-w-0">
+        {/* 3. Ensure Header components can navigate */}
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
         
         <main className="p-4 md:p-8">
@@ -72,7 +81,10 @@ function DashboardPage () {
             {/* KPI Stats Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {stats.map((stat, index) => (
-                <StatCard key={index} {...stat} />
+                // 4. Wrap StatCard in a Link
+                <Link to={stat.link} key={index} className="block">
+                    <StatCard {...stat} />
+                </Link>
               ))}
             </div>
 
@@ -82,7 +94,7 @@ function DashboardPage () {
               {/* Filter Tabs Row */}
               <FilterTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
-              {/* Search Bar Row (Added here to match assignment pattern) */}
+              {/* Search Bar Row */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div className="relative w-full md:w-80">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
@@ -95,10 +107,10 @@ function DashboardPage () {
                   />
                 </div>
                 
-                {/* Optional: Filter/Refresh buttons like in your image */}
+                {/* 5. Add Link to Action Buttons */}
                 <div className="flex gap-2">
-                  <button className="px-4 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50">Filter</button>
-                  <button className="px-4 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50">Refresh</button>
+                  <Link to="/dashboard/filters" className="px-4 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50">Filter</Link>
+                  <button onClick={() => window.location.reload()} className="px-4 py-2 border border-gray-200 rounded-lg text-sm text-gray-600 hover:bg-gray-50">Refresh</button>
                 </div>
               </div>
               

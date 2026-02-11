@@ -1,13 +1,18 @@
-import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X, Plus, Speech, ChartSplineIcon, Text } from 'lucide-react';
+import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X, Plus, Speech, Text } from 'lucide-react';
+// 1. Import Link from react-router-dom
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
+  // 2. Get current location to highlight the active link
+  const location = useLocation();
+
   const navItems = [
-    { icon: Home, label: 'Home', active: false},
-    { icon: LayoutDashboard, label: 'Dashboard', active: true },
-    { icon: CreditCard, label: 'Comm and Payouts', active: false },
-    { icon: Plus, label: 'Add Request', active: false },
-    { icon: Speech, label:'Market', active: false },
-    { icon: Text, label:'Support Chat', active: false }
+    { icon: Home, label: 'Home', path: '/' },
+    { icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' },
+    { icon: CreditCard, label: 'Comm and Payouts', path: '/dashboard/payouts' },
+    { icon: Plus, label: 'Add Request', path: '/dashboard/add-request' },
+    { icon: Speech, label: 'Market', path: '/dashboard/market' },
+    { icon: Text, label: 'Support Chat', path: '/dashboard/support' }
   ];
 
   return (
@@ -40,20 +45,27 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
           {/* Nav Links */}
           <nav className="flex-1 space-y-2">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href="#"
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
-                  item.active 
-                  ? 'bg-purple-50 text-brand-purple font-medium' 
-                  : 'text-gray-500 hover:bg-gray-50'
-                }`}
-              >
-                <item.icon size={20} />
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              // 3. Check if current path matches the link path
+              const isActive = location.pathname === item.path;
+              
+              return (
+                // 4. Replace <a> with <Link>
+                <Link
+                  key={item.label}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)} // Close sidebar on mobile after clicking
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
+                    isActive 
+                      ? 'bg-purple-50 text-purple-600 font-medium' // Updated text-brand-purple to purple-600 for consistency
+                      : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
+                  }`}
+                >
+                  <item.icon size={20} />
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Logout */}
