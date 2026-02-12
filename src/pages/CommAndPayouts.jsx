@@ -82,7 +82,11 @@ const CommAndPayouts = () => {
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-gray-100">
-
+                                        {payoutHistory.map((row) => (
+                                            <tr key={row.id}>
+                                                
+                                            </tr>
+                                        ))}
                                     </tbody>
                                 </table>
                             </div>
