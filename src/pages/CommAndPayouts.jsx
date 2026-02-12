@@ -67,6 +67,11 @@ const CommAndPayouts = () => {
                                 Request Transfer
                             </button>
                         </div>
+
+                        {/* Payout History Table */}
+                        <div className="lg:col-span-2 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                        <h2 className="text-lg font-semibold text-gray-900 mb-4">Payout History</h2>
+                        </div>
                     </div>
                 </main>
             </div>
