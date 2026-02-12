@@ -14,7 +14,9 @@ const AddRequest = () => {
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
 
                 <main className="p-4 md:p-8">
-                    
+                    <div className="max-w-4xl mx-auto">
+                        <h1 className="text-2xl font-bold text-gray-900 mb-6">Create New Payment Request</h1>
+                    </div>
                 </main>
             </div>
         </div>

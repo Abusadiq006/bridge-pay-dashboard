@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/dashboard/payouts" element={<CommAndPayouts />} />
-        <Route path="/dashboard/request" elemetn={<AddRequest />} />
+        <Route path="/dashboard/add-request" element={<AddRequest />} />
       </Routes>
     </Router>
   )
