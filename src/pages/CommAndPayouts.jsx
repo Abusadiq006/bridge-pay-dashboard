@@ -75,7 +75,7 @@ const CommAndPayouts = () => {
                                 <table className="w-full text-sm">
                                     <thead>
                                         <tr className="text-left text-gray-500 border-b border-gray-100">
-                                            
+
                                         </tr>
                                     </thead>
                                 </table>
@@ -87,3 +87,5 @@ const CommAndPayouts = () => {
         </div>
     )
 }
+
+export default CommAndPayouts

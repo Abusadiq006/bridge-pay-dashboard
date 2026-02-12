@@ -1,5 +1,4 @@
 import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X, Plus, Speech, Text } from 'lucide-react';
-// 1. Import Link from react-router-dom
 import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
