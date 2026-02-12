@@ -38,6 +38,7 @@ const CommAndPayouts = () => {
                     {/* Stats Overview */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         {[
+                            { title: 'Total Earned', value: '$12,500', icon: DollarSign, color: 'text-purple-600' },
                             
                         ]}
                     </div>
