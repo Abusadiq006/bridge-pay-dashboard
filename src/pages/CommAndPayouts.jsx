@@ -56,7 +56,9 @@ const CommAndPayouts = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
                     {/* Request Payout Card */}
-                    
+                    <div className="lg:col-span-1 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                    <h2 className="text-lg font-semibold text-gray-900 mb-4">Request Payout</h2>
+                    </div>
                     </div>
                 </main>
             </div>
