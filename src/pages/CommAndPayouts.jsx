@@ -85,6 +85,7 @@ const CommAndPayouts = () => {
                                         {payoutHistory.map((row) => (
                                             <tr key={row.id}>
                                                 <td className="py-4 text-gray-900 font-medium">{row.id}</td>
+                                                <td className="py-4 text-gray-600">{row.date}</td>
                                                 
                                             </tr>
                                         ))}
