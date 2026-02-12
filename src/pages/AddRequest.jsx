@@ -9,6 +9,12 @@ const AddRequest = () => {
     return (
         <div className="flex min-h-screen bg-[#F9FAFB]">
             <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+
+            <div className="flex-1 flex flex-col">
+                <Header onMenuClick={() => setIsSidebarOpen(true)} />
+
+                
+            </div>
         </div>
     )
 }
