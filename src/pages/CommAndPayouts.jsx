@@ -14,7 +14,9 @@ const CommAndPayouts = () => {
 
     const StatusBadge = ({ status }) => {
         const colors = {
-            
+            Complete: 'bg-green-100 text-green-700',
+            Processing: 'bg-yellow-100 text-yellow-700',
+            Failed: 'bg-red-100 text-red-700',
         }
     }
 }
