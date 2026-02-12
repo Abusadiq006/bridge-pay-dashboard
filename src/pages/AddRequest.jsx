@@ -7,7 +7,9 @@ const AddRequest = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
     return (
-        div
+        <div className="flex min-h-screen bg-[#F9FAFB]">
+            <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
+        </div>
     )
 }
 
