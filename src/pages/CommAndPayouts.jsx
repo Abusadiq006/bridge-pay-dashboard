@@ -81,6 +81,9 @@ const CommAndPayouts = () => {
                                             <th className="pb-3 font-medium">Status</th>
                                         </tr>
                                     </thead>
+                                    <tbody className="divide-y divide-gray-100">
+
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
