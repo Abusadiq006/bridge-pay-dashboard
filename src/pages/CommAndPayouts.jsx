@@ -44,9 +44,10 @@ const CommAndPayouts = () => {
                         ].map((stat, i) => (
                             <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                                 <div className="flex items-center justify-between">
-                                <p className="text-sm font-medium text-gray-500">{stat.title}</p>
-                    <stat.icon className={`w-5 h-5 ${stat.color}`} />
+                                    <p className="text-sm font-medium text-gray-500">{stat.title}</p>
+                                    <stat.icon className={`w-5 h-5 ${stat.color}`} />
                                 </div>
+                                <p className="text-3xl font-bold text-gray-900 mt-2">{stat.value}</p>
                             </div>
                         ))}
                     </div>
