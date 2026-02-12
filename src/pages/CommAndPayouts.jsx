@@ -12,5 +12,9 @@ const payoutHistory = [
 const CommAndPayouts = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-    
+    const StatusBadge = ({ status }) => {
+        const colors = {
+            
+        }
+    }
 }
