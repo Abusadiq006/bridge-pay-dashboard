@@ -40,6 +40,7 @@ const CommAndPayouts = () => {
                         {[
                             { title: 'Total Earned', value: '$12,500', icon: DollarSign, color: 'text-purple-600' },
                             { title: 'Available Balance', value: '$8,200', icon: Wallet, color: 'text-green-600' },
+                            { title: 'Pending Payout', value: '$1,300', icon: ArrowUpRight, color: 'text-yellow-600' },
                         ]}
                     </div>
                 </main>
