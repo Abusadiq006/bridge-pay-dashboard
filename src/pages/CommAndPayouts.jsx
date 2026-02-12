@@ -43,7 +43,10 @@ const CommAndPayouts = () => {
                             { title: 'Pending Payout', value: '$1,300', icon: ArrowUpRight, color: 'text-yellow-600' },
                         ].map((stat, i) => (
                             <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                                
+                                <div className="flex items-center justify-between">
+                                <p className="text-sm font-medium text-gray-500">{stat.title}</p>
+                    <stat.icon className={`w-5 h-5 ${stat.color}`} />
+                                </div>
                             </div>
                         ))}
                     </div>
