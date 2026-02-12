@@ -63,6 +63,9 @@ const CommAndPayouts = () => {
                                 <p className="text-sm text-purple-700 font-medium">Available to withdraw</p>
                                 <p className="text-2xl font-bold text-purple-900">$8,200</p>
                             </div>
+                            <button className="w-full bg-purple-600 text-white py-3 rounded-xl font-semibold hover:bg-purple-700 transition">
+                                Request Transfer
+                            </button>
                         </div>
                     </div>
                 </main>
