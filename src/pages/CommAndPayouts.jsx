@@ -31,7 +31,10 @@ const CommAndPayouts = () => {
 
             <div className="flex-1 flex flex-col">
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
-                
+
+                <main className="max-w-7xl mx-auto">
+                    <h1 className="text-2xl font-bold text-gray-900 mb-6">Commission & Payouts</h1>
+                </main>
             </div>
         </div>
     )
