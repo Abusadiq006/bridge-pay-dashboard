@@ -16,6 +16,13 @@ const AddRequest = () => {
                 <main className="p-4 md:p-8">
                     <div className="max-w-4xl mx-auto">
                         <h1 className="text-2xl font-bold text-gray-900 mb-6">Create New Payment Request</h1>
+
+                        <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm">
+                            <form className="space-y-6">
+
+                                {/* Client Details */}
+                            </form>
+                        </div>
                     </div>
                 </main>
             </div>
