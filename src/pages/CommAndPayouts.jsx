@@ -58,6 +58,7 @@ const CommAndPayouts = () => {
                     {/* Request Payout Card */}
                     <div className="lg:col-span-1 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                     <h2 className="text-lg font-semibold text-gray-900 mb-4">Request Payout</h2>
+                    <p className="text-sm text-gray-600 mb-6">Transfer your available balance to your registered bank account.</p>
                     </div>
                     </div>
                 </main>
