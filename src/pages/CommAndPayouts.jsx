@@ -51,6 +51,13 @@ const CommAndPayouts = () => {
                             </div>
                         ))}
                     </div>
+
+                    {/* Payout Action & History */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    {/* Request Payout Card */}
+                    
+                    </div>
                 </main>
             </div>
         </div>
