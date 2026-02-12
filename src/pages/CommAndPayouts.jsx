@@ -71,6 +71,15 @@ const CommAndPayouts = () => {
                         {/* Payout History Table */}
                         <div className="lg:col-span-2 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                         <h2 className="text-lg font-semibold text-gray-900 mb-4">Payout History</h2>
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-sm">
+                                    <thead>
+                                        <tr className="text-left text-gray-500 border-b border-gray-100">
+                                            
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </main>
