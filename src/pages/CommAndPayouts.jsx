@@ -78,6 +78,7 @@ const CommAndPayouts = () => {
                                             <th className="pb-3 font-medium">Ref ID</th>
                                             <th className="pb-3 font-medium">Date</th>
                                             <th className="pb-3 font-medium">Amount</th>
+                                            <th className="pb-3 font-medium">Status</th>
                                         </tr>
                                     </thead>
                                 </table>
