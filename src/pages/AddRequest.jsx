@@ -44,6 +44,7 @@ const AddRequest = () => {
                                             <div className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-purple-300 transition-colors cursor-pointer">
                                             <UploadCloud className="mx-auto h-10 w-10 text-gray-400" />
                                             <p className="mt-2 text-sm text-gray-600">Drag & drop files or click to upload</p>
+                                            <p className="text-xs text-gray-400">PDF, JPG, PNG up to 5MB</p>
                                             </div>
                                         </div>
                                     </div>
