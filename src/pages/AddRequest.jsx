@@ -41,6 +41,10 @@ const AddRequest = () => {
                                         {/* File Upload */}
                                         <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Attach Invoice (Optional)</label>
+                                            <div className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-purple-300 transition-colors cursor-pointer">
+                                            <UploadCloud className="mx-auto h-10 w-10 text-gray-400" />
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
