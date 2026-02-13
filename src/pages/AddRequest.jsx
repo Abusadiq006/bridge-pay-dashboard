@@ -49,7 +49,11 @@ const AddRequest = () => {
                                         </div>
 
                                         {/* Submit Button */}
-                                        <div className="flex justify-end pt-4"></div>
+                                        <div className="flex justify-end pt-4">
+                                            <button type="submit" className="flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-700 transition">
+                                                
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
