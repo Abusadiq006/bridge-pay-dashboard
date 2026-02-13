@@ -32,6 +32,10 @@ const AddRequest = () => {
                                     </div>
                                     <div>
                                         
+                                        {/* Amount & Description */}
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">Amount (USD)</label>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
