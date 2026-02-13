@@ -35,6 +35,7 @@ const AddRequest = () => {
                                         {/* Amount & Description */}
                                         <div>
                                             <label className="block text-sm font-medium text-gray-700 mb-2">Amount (USD)</label>
+                                            <input type="number" placeholder="0.00" className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-100 outline-none" />
                                         </div>
                                     </div>
                                 </div>
