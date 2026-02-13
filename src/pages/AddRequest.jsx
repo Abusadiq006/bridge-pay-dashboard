@@ -47,6 +47,9 @@ const AddRequest = () => {
                                             <p className="text-xs text-gray-400">PDF, JPG, PNG up to 5MB</p>
                                             </div>
                                         </div>
+
+                                        {/* Submit Button */}
+                                        <div className="flex justify-end pt-4"></div>
                                     </div>
                                 </div>
                             </form>
