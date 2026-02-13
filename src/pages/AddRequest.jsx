@@ -24,6 +24,14 @@ const AddRequest = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Client Name</label>
+                                        <input type="email" placeholder="example@gmail.com" className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-100 outline-none" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">Client Email</label>
+                                        <input type="email" placeholder="example@gmail.com" className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-100 outline-none" />
+                                    </div>
+                                    <div>
+                                        
                                     </div>
                                 </div>
                             </form>
