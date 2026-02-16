@@ -10,4 +10,15 @@ const marketItems = [
     { id: 3, name: 'Elegant Events', category: 'Planners', rating: 4.7, location: 'Lagos', price: '$2,500', image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61662?q=80&w=400' },
 ]
 
+const Market = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+    const [searchTerm, setSearchTerm] = useState('')
+
+    return (
+        <div className="flex min-h-screen bg-[#F9FAFB]">
+            
+        </div>
+    )
+}
+
 export default Market
