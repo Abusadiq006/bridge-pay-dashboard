@@ -53,6 +53,13 @@ const Market = () => {
                                         <span className="text-sm font-bold text-purple-600">{item.price}</span>
                                     </div>
                                     <p className="text-sm text-gray-500 mb-4">{item.category}</p>
+
+                                    <div className="flex items-center justify-between text-sm text-gray-600 border-t border-gray-100 pt-4">
+                                        <div className="flex items-center gap-1">
+                                            <MapPin size={16} className="text-gray-400" />
+                                            {item.location}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>    
                         ))}
