@@ -50,7 +50,7 @@ const Market = () => {
                                 <div className="p-5">
                                     <div className="flex justify-between items-start mb-2">
                                         <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
-                                        
+                                        <span className="text-sm font-bold text-purple-600">{item.price}</span>
                                     </div>
                                 </div>
                             </div>    
