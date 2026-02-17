@@ -18,6 +18,16 @@ const SupportChat = () => {
     const sendMessage = (e) => {
         e.preventDefault()
         if (newMessage.trim() === '') return
+
+        const newMsgObj = {
+            id: messages.length + 1,
+            sender: 'user',
+            text: newMessage,
+            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'})
+        }
+
+        setMessages([...messages, newMsgObj])
+        setNewMessage('')
     }
 }
 
