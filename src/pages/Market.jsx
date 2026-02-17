@@ -52,6 +52,7 @@ const Market = () => {
                                         <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                                         <span className="text-sm font-bold text-purple-600">{item.price}</span>
                                     </div>
+                                    <p className="text-sm text-gray-500 mb-4">{item.category}</p>
                                 </div>
                             </div>    
                         ))}
