@@ -22,7 +22,11 @@ const Market = () => {
                 <Header onMenuClick = {() => setIsSidebarOpen(true)} />
 
                 <main className="p-4 md:p-8">
-                    <div className="max-w-7xl mx-auto"></div>
+                    <div className="max-w-7xl mx-auto">
+
+                        {/* Header Section */}
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"></div>
+                    </div>
                 </main>
             </div>
         </div>
