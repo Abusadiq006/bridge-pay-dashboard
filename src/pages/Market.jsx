@@ -25,7 +25,9 @@ const Market = () => {
                     <div className="max-w-7xl mx-auto">
 
                         {/* Header Section */}
-                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"></div>
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                            <h1 className="text-2xl font-bold text-gray-900">Vendor Market</h1>
+                        </div>
                     </div>
                 </main>
             </div>
