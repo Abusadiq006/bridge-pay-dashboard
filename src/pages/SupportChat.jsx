@@ -10,6 +10,17 @@ const initialMessages = [
     { id: 3, sender: 'support', text: 'I can help with that. What is the Reference ID?', time: '10:33 AM' },
 ]
 
+const SupportChat = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+    const [messages, setMessages] = useState(initialMessages)
+    const [newMessage, setNewMessage] = useState('')
+
+    const sendMessage = (e) => {
+        e.preventDefault()
+        if (newMessage.trim() === '') return
+    }
+}
+
 
 
 export default SupportChat
