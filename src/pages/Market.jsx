@@ -47,6 +47,12 @@ const Market = () => {
                         {marketItems.map((item) => (
                             <div key={item.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                                 <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+                                <div className="p-5">
+                                    <div className="flex justify-between items-start mb-2">
+                                        <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
+                                        
+                                    </div>
+                                </div>
                             </div>    
                         ))}
                     </div>
