@@ -59,6 +59,10 @@ const Market = () => {
                                             <MapPin size={16} className="text-gray-400" />
                                             {item.location}
                                         </div>
+                                        <div className="flex items-center gap-1">
+                                            <Star size={16} className="text-yellow-400 fill-yellow-400" />
+                                            {item.rating}
+                                        </div>
                                     </div>
                                 </div>
                             </div>    
