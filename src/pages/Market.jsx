@@ -28,6 +28,11 @@ const Market = () => {
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                             <h1 className="text-2xl font-bold text-gray-900">Vendor Market</h1>
                         </div>
+
+                        {/* Search Bar */}
+                        <div className="relative w-full md:w-80">
+                            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
+                        </div>
                     </div>
                 </main>
             </div>
