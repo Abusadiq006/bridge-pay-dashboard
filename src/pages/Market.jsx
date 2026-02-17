@@ -44,7 +44,11 @@ const Market = () => {
 
                     {/* Grid Items */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        
+                        {marketItems.map((item) => (
+                            <div key={item.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                                <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+                            </div>    
+                        ))}
                     </div>
                 </main>
             </div>
