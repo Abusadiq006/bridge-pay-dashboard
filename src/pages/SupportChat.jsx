@@ -42,7 +42,9 @@ const SupportChat = () => {
 
                         {/* Chat Header */}
                         <div className="p-4 md:p-6 border-b border-gray-100 flex items-center justify-between">
-                            
+                            <div>
+                                <h1 className="text-lg font-bold text-gray-900">Support Chat</h1>
+                            </div>
                         </div>
                     </div>
                 </main>
