@@ -47,7 +47,7 @@ const SupportChat = () => {
                                 <p className="text-sm text-green-600 font-medium">Online</p>
                             </div>
                             <button className="flex items-center gap-2 text-sm text-purple-600 bg-purple-50 px-4 py-2 rounded-xl hover:bg-purple-100">
-                                
+                                <Phone size={16} />
                             </button>
                         </div>
                     </div>
