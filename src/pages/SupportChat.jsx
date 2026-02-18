@@ -37,7 +37,15 @@ const SupportChat = () => {
             <div className="flex-1 flex flex-col">
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
 
-                <main className="p-4 md:p-6 flex-1 flex flex-col"></main>
+                <main className="p-4 md:p-6 flex-1 flex flex-col">
+                    <div className="max-w-7xl mx-auto w-full flex-1 flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+
+                        {/* Chat Header */}
+                        <div className="p-4 md:p-6 border-b border-gray-100 flex items-center justify-between">
+                            
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
     )
