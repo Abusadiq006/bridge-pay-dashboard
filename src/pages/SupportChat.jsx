@@ -29,6 +29,12 @@ const SupportChat = () => {
         setMessages([...messages, newMsgObj])
         setNewMessage('')
     }
+
+    return (
+        <div className="flex min-h-screen bg-[#F9FAFB]">
+            
+        </div>
+    )
 }
 
 
