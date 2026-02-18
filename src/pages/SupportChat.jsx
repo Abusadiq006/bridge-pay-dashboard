@@ -36,6 +36,8 @@ const SupportChat = () => {
 
             <div className="flex-1 flex flex-col">
                 <Header onMenuClick={() => setIsSidebarOpen(true)} />
+
+                <main className="p-4 md:p-6 flex-1 flex flex-col"></main>
             </div>
         </div>
     )
