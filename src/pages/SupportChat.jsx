@@ -51,6 +51,8 @@ const SupportChat = () => {
                                 Call Support
                             </button>
                         </div>
+
+                        {/* Messages Area */}
                     </div>
                 </main>
             </div>
