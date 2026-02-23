@@ -53,6 +53,9 @@ const SupportChat = () => {
                         </div>
 
                         {/* Messages Area */}
+                        <div key={message.id} className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
+                            
+                        </div>
                     </div>
                 </main>
             </div>
