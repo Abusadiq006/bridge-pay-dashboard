@@ -54,7 +54,13 @@ const SupportChat = () => {
 
                         {/* Messages Area */}
                         <div key={message.id} className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
+                        <div className={`max-w-xs md:max-w-md p-4 rounded-2xl text-sm ${
+                            message.sender === 'user' 
+                            ? 'bg-purple-600 text-white rounded-br-none' 
+                            : 'bg-white text-gray-900 rounded-bl-none border border-gray-100'
+                        }`}>
                             
+                        </div>
                         </div>
                     </div>
                 </main>
