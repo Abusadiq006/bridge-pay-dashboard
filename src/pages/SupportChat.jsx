@@ -59,7 +59,7 @@ const SupportChat = () => {
                             ? 'bg-purple-600 text-white rounded-br-none' 
                             : 'bg-white text-gray-900 rounded-bl-none border border-gray-100'
                         }`}>
-                            
+                            <p>{message.text}</p>
                         </div>
                         </div>
                     </div>
