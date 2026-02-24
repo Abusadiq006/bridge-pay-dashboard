@@ -7,6 +7,10 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   const [activeView, setActiveView] = useState('home')
+
+  const navLinks = [
+    
+  ]
   return (
     <div className="min-h-screen bg-white">
       {/* Basic Navbar */}
