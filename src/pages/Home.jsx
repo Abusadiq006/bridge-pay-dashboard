@@ -17,7 +17,7 @@ const Home = () => {
     window.location.href = '/'
   }
 
-  
+  <button></button>
   // Navigation config to keep code clean
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
