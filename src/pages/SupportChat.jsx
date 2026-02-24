@@ -62,7 +62,7 @@ const SupportChat = () => {
                       : 'bg-white text-gray-900 rounded-bl-none border border-gray-100'
                   }`}>
                     <p>{message.text}</p>
-                    <span >
+                    <span className={`text-xs mt-2 block ${message.sender === 'user' ? 'text-purple-200' : 'text-gray-400'}`} >
                         
                     </span>
                   </div>
