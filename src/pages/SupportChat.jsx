@@ -81,7 +81,7 @@ const SupportChat = () => {
               />
     
                 <button type="submit" className="bg-purple-600 text-white p-3 rounded-xl hover:bg-purple-700 transition">
-                    
+                    <SendHorizontal size={20} />
                 </button>
             </form>
           </div>
