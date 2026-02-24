@@ -6,78 +6,57 @@ import TrustSection from '../components/TrustSection';
 import Footer from '../components/Footer';
 
 const Home = () => {
-  const [activeView, setActiveView] = useState('home')
+  // We can keep activeView if you want to highlight the button, 
+  // but Link will handle the actual navigation.
+  const [activeView, setActiveView] = useState('home');
 
+  // Navigation config to keep code clean
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
     { name: 'Add Request', path: '/dashboard/add-request', id: 'request' },
     { name: 'Market', path: '/dashboard/market', id: 'market' },
     { name: 'Support Chat', path: '/dashboard/support', id: 'support' },
-  ]
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Basic Navbar */}
       <nav className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-purple-600">BridgePay
+          <div className="flex items-center gap-8">
+            <Link to="/" className="text-2xl font-bold text-purple-600">BridgePay</Link>
+            
+            {/* Pill Navigation */}
             <div className="bg-gray-100 p-1 rounded-full flex gap-1">
-              <button
-              onClick={() => setActiveView('payout')}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeView === 'payout'
-                ? 'bg-white text-purple-600 shadow'
-                : 'text-gray-600 hover:text-gray-900'
-              }`}
-              >
-                Comm and Payouts
-              </button>
-              <button
-              onClick={() => setActiveView('payout')}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeView === 'payout'
-                ? 'bg-white text-purple-600 shadow'
-                : 'text-gray-600 hover:text-gray-900'
-              }`}
-              >
-                Add Request
-              </button>
-              <button
-              onClick={() => setActiveView('payout')}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeView === 'payout'
-                ? 'bg-white text-purple-600 shadow'
-                : 'text-gray-600 hover:text-gray-900'
-              }`}
-              >
-                Market
-              </button>
-              <button
-              onClick={() => setActiveView('payout')}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeView === 'payout'
-                ? 'bg-white text-purple-600 shadow'
-                : 'text-gray-600 hover:text-gray-900'
-              }`}
-              >
-                Support Chat
-              </button>
-              <button
-              onClick={() => setActiveView('payout')}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeView === 'payout'
-                ? 'bg-white text-purple-600 shadow'
-                : 'text-gray-600 hover:text-gray-900'
-              }`}
+              {navLinks.map((link) => (
+                <Link
+                  key={link.id}
+                  to={link.path}
+                  onClick={() => setActiveView(link.id)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                    activeView === link.id
+                      ? 'bg-white text-purple-600 shadow'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              
+              {/* Logout Button (Usually a simple link to login or home) */}
+              <Link
+                to="/"
+                className="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
               >
                 LogOut
-              </button>
+              </Link>
             </div>
           </div>
+
           <Link to="/dashboard" className="bg-purple-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-purple-700">
             Go to Dashboard
           </Link>
         </div>
-        <Features />
       </nav>
 
       {/* Hero Section */}
@@ -90,12 +69,17 @@ const Home = () => {
           Manage wedding vendor payments, track budgets, and ensure secure 
           transactions all in one place with BridgePay.
         </p>
+        
         <div className="mt-10">
-          <Link to="/dashboard" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+          <Link to="/dashboard" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-10 rounded-full shadow-lg transition duration-300 inline-block">
             View Dashboard
           </Link>
-          <TrustSection />
-          <Footer />
+          
+          <div className="mt-16">
+            <Features />
+            <TrustSection />
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
