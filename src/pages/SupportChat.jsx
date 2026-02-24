@@ -75,6 +75,7 @@ const SupportChat = () => {
               <input 
               type="text"
               value={newMessage}
+              onChange={(e) => setNewMessage(e.target.value)}
               />
               <button >
                 
