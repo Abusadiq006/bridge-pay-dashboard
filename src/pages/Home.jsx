@@ -10,6 +10,7 @@ const Home = () => {
 
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
+    { name: 'Add Request', path: '/dashboard/add-request', id: 'request'}
   ]
   return (
     <div className="min-h-screen bg-white">
