@@ -6,7 +6,7 @@ import TrustSection from '../components/TrustSection';
 import Footer from '../components/Footer';
 
 const Home = () => {
-  const [activeView, setActiveView] = useState('payout')
+  const [activeView, setActiveView] = useState('home')
   return (
     <div className="min-h-screen bg-white">
       {/* Basic Navbar */}
