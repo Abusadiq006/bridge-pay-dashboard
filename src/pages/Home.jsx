@@ -10,6 +10,14 @@ const Home = () => {
   // but Link will handle the actual navigation.
   const [activeView, setActiveView] = useState('home');
 
+  const handleLogout = () => {
+    localStorage.removeItem('userToken')
+    localStorage.removeItem('bridgepay_user')
+
+    window.location.href = '/'
+  }
+
+  
   // Navigation config to keep code clean
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
