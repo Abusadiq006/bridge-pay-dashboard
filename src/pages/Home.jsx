@@ -9,7 +9,7 @@ const Home = () => {
   const [activeView, setActiveView] = useState('home')
 
   const navLinks = [
-    
+    { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
   ]
   return (
     <div className="min-h-screen bg-white">
