@@ -10,8 +10,9 @@ const Home = () => {
 
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
-    { name: 'Add Request', path: '/dashboard/add-request', id: 'request'},
-    { name: 'Market', path: '/dashboard/market', id: 'market'}
+    { name: 'Add Request', path: '/dashboard/add-request', id: 'request' },
+    { name: 'Market', path: '/dashboard/market', id: 'market' },
+    { name: 'Support Chat', path: '/dashboard/support', id: 'support' },
   ]
   return (
     <div className="min-h-screen bg-white">
