@@ -63,7 +63,7 @@ const SupportChat = () => {
                   }`}>
                     <p>{message.text}</p>
                     <span className={`text-xs mt-2 block ${message.sender === 'user' ? 'text-purple-200' : 'text-gray-400'}`} >
-                        
+                        {message.text}
                     </span>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const SupportChat = () => {
             </div>
 
             {/* Input Area */}
-            <form >
+            <form onSubmit={sendMessage} className="p-4 md:p-6 border-t border-gray-100 flex gap-4">
               <input 
               />
               <button >
