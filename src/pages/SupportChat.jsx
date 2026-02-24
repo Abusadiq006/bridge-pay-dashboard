@@ -73,6 +73,7 @@ const SupportChat = () => {
             {/* Input Area */}
             <form onSubmit={sendMessage} className="p-4 md:p-6 border-t border-gray-100 flex gap-4">
               <input 
+              type="text"
               />
               <button >
                 
