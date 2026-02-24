@@ -79,9 +79,7 @@ const SupportChat = () => {
               placeholder="Type your message..."
               className="flex-1 px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-100 outline-none text-sm"
               />
-              <button >
-                
-              </button>
+   
             </form>
           </div>
         </main>
