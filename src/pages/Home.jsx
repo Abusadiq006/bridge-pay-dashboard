@@ -6,19 +6,16 @@ import TrustSection from '../components/TrustSection';
 import Footer from '../components/Footer';
 
 const Home = () => {
-  // We can keep activeView if you want to highlight the button, 
-  // but Link will handle the actual navigation.
   const [activeView, setActiveView] = useState('home');
 
+  // The Logout Logic
   const handleLogout = () => {
-    localStorage.removeItem('userToken')
-    localStorage.removeItem('bridgepay_user')
+    localStorage.removeItem('userToken');
+    localStorage.removeItem('bridgepay_user');
+    // Force a reload to the home page to clear any app state
+    window.location.href = '/';
+  };
 
-    window.location.href = '/'
-  }
-
- 
-  // Navigation config to keep code clean
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
     { name: 'Add Request', path: '/dashboard/add-request', id: 'request' },
@@ -28,13 +25,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Basic Navbar */}
       <nav className="border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-8">
             <Link to="/" className="text-2xl font-bold text-purple-600">BridgePay</Link>
             
-            {/* Pill Navigation */}
             <div className="bg-gray-100 p-1 rounded-full flex gap-1">
               {navLinks.map((link) => (
                 <Link
@@ -51,13 +46,13 @@ const Home = () => {
                 </Link>
               ))}
               
-              {/* Logout Button (Usually a simple link to login or home) */}
-              <Link
-                to="/"
+              {/* Corrected Logout Button */}
+              <button
+                onClick={handleLogout}
                 className="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
               >
                 LogOut
-              </Link>
+              </button>
             </div>
           </div>
 
