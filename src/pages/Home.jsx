@@ -17,11 +17,7 @@ const Home = () => {
     window.location.href = '/'
   }
 
-  <button
-    onClick={handleLogout}
-    className="px-4 py-1.5 rounded-full text-sm font-medium text-gray-600 hover:text-red-600 transition-colors">
-      
-    </button>
+ 
   // Navigation config to keep code clean
   const navLinks = [
     { name: 'Comm and Payouts', path: '/dashboard/payouts', id: 'payout' },
