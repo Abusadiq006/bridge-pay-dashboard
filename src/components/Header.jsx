@@ -29,10 +29,13 @@ const Header = ({ onMenuClick }) => {
           <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
         </Link>
         
-        <button className="p-2 text-gray-400 hover:text-gray-600 relative">
+        {/* Settings Icon */}
+        <Link 
+          to="/dashboard/settings" 
+          className="p-2.5 text-gray-400 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-all"
+        >
           <Settings size={20} />
-          <span className="absolute top-2 right-2 w-2 h-2 bg-blue-500 rounded-full border-2 border-white"></span>
-        </button>
+        </Link>
 
         {/* Quick Add Request Button */}
         <Link 
