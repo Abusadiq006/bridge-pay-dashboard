@@ -29,9 +29,14 @@ const Header = ({ onMenuClick }) => {
           <span className="absolute top-2 right-2 w-2 h-2 bg-blue-500 rounded-full border-2 border-white"></span>
         </button>
 
-        <button className="bg-brand-purple text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-purple-700 transition-all shadow-sm shadow-purple-200">
-          + Add Payment Request
-        </button>
+        {/* Quick Add Request Button */}
+        <Link 
+          to="/dashboard/add-request" 
+          className="hidden sm:flex items-center gap-2 bg-purple-50 text-purple-600 px-4 py-2 rounded-xl text-sm font-semibold hover:bg-purple-100 transition-colors"
+        >
+          <PlusCircle size={18} />
+          <span>New Request</span>
+        </Link>
       </div>
     </header>
   );
