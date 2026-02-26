@@ -6,9 +6,12 @@ const Header = ({ onMenuClick }) => {
     <header className="h-20 border-b border-gray-100 bg-white px-4 md:px-8 flex items-center justify-between sticky top-0 z-30">
       <div className="flex items-center gap-4">
         {/* Mobile Menu Toggle */}
-        <button onClick={onMenuClick} className="md:hidden p-2 hover:bg-gray-100 rounded-lg">
-          <Menu size={24} />
-        </button>
+      <button 
+        onClick={onMenuClick} 
+        className="md:hidden p-2 hover:bg-gray-50 rounded-lg text-gray-600"
+      >
+        <Menu size={24} />
+      </button>
         
         <h2 className="text-xl font-semibold hidden md:block">Payment Request History</h2>
       </div>
