@@ -45,6 +45,9 @@ const Header = ({ onMenuClick }) => {
           <PlusCircle size={18} />
           <span>New Request</span>
         </Link>
+
+        {/* Divider */}
+        <div className="h-8 w-[1px] bg-gray-100 mx-1"></div>
       </div>
     </header>
   );
