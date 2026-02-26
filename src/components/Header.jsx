@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ onMenuClick }) => {
   return (
-    <header className="flex items-center justify-between px-4 py-4 md:px-8 bg-white border-b border-gray-100 sticky top-0 z-30">
+    <header className="h-20 border-b border-gray-100 bg-white px-4 md:px-8 flex items-center justify-between sticky top-0 z-30">
       <div className="flex items-center gap-4">
         {/* Mobile Menu Toggle */}
         <button onClick={onMenuClick} className="md:hidden p-2 hover:bg-gray-100 rounded-lg">
