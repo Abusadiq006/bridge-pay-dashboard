@@ -1,4 +1,5 @@
-import { Search, Bell, Menu, Settings } from 'lucide-react';
+import { Bell, Settings, PlusCircle, User, Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = ({ onMenuClick }) => {
   return (
