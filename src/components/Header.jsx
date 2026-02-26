@@ -48,6 +48,21 @@ const Header = ({ onMenuClick }) => {
 
         {/* Divider */}
         <div className="h-8 w-[1px] bg-gray-100 mx-1"></div>
+
+        {/* Profile Section */}
+        <Link 
+          to="/dashboard/settings" 
+          className="flex items-center gap-3 pl-2 hover:opacity-80 transition-opacity"
+        >
+          <div className="text-right hidden md:block">
+            <p className="text-sm font-bold text-gray-900">John Doe</p>
+            <p className="text-xs text-gray-500">Vendor Account</p>
+          </div>
+          <div className="w-10 h-10 bg-gradient-to-tr from-purple-600 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold shadow-sm">
+            JD
+          </div>
+        </Link>
+        
       </div>
     </header>
   );
