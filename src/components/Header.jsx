@@ -19,10 +19,15 @@ const Header = ({ onMenuClick }) => {
       <div className="flex items-center gap-3 md:gap-6">
         {/* Search - Hidden on small mobile, visible on tablet+ */}
         
-        <button className="p-2 text-gray-400 hover:text-gray-600 relative">
+        {/* Notification Bell */}
+        <Link 
+          to="/dashboard/notifications" 
+          className="p-2.5 text-gray-400 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-all relative"
+        >
           <Bell size={20} />
+          {/* Notification Dot */}
           <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
-        </button>
+        </Link>
         
         <button className="p-2 text-gray-400 hover:text-gray-600 relative">
           <Settings size={20} />
