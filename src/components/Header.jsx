@@ -1,6 +1,5 @@
 import { Bell, Settings, PlusCircle, User, Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Notifications from '../pages/Notifications';
 
 const Header = ({ onMenuClick }) => {
   return (
@@ -63,7 +62,6 @@ const Header = ({ onMenuClick }) => {
             JD
           </div>
         </Link>
-        <Notifications />
 
       </div>
     </header>
