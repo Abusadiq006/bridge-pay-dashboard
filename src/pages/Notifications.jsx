@@ -37,7 +37,7 @@ const Notifications = () => {
                 {notifications.length > 0 ? (
                   <div className="divide-y divide-gray-100">
                     {notifications.map((n) => (
-                      
+                      <div key={n.id} className={`p-5 flex gap-4 transition-colors ${n.read ? 'bg-white' : 'bg-purple-50/30'}`}></div>
                     ))}
                   </div>
                 )}
