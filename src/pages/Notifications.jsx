@@ -13,7 +13,7 @@ const Notifications = () => {
   const [notifications, setNotifications] = useState(initialNotifications)
 
   const markAllRead =() => {
-    
+    setNotifications(notifications.map(n => ({ ...n, read: true })))
   }
 }
 
