@@ -48,6 +48,7 @@ const Notifications = () => {
                       <div className="flex-1">
                         <div className="flex justify-between items-start">
                           <h3 className={`text-sm font-bold ${n.read ? 'text-gray-900' : 'text-purple-900'}`}>{n.title}</h3>
+                          <span className="text-xs text-gray-400">{n.time}</span>
                         </div>
                       </div>
                       </div>
