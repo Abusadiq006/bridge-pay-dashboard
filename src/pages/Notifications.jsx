@@ -27,7 +27,10 @@ const Notifications = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-gray-900">Notifications</h1>
-                <button></button>
+                <button onClick={markAllRead}
+                className="text-sm font-semibold text-purple-600 hover:text-purple-700">
+                  Mark all as read
+                </button>
               </div>
             </div>
           </main>
