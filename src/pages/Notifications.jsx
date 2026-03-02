@@ -41,7 +41,9 @@ const Notifications = () => {
                         <div className={`p-2 rounded-xl h-fit ${
                         n.type === 'payment' ? 'bg-green-100 text-green-600' : 
                         n.type === 'payout' ? 'bg-blue-100 text-blue-600' : 'bg-yellow-100 text-yellow-600'
-                      }`}></div>
+                      }`}>
+                        {n.type === 'payment' ? <CheckCircle size={20} /> : n.type === 'payout' ? <Clock size={20} /> : <AlertCircle size={20} />}
+                      </div>
                       </div>
                     ))}
                   </div>
