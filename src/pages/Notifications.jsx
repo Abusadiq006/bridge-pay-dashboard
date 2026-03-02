@@ -17,7 +17,9 @@ const Notifications = () => {
   }
 
   return (
-    
+    <div className="flex min-h-screen bg-[#F9FAFB]">
+
+    </div>
   )
 
 }
