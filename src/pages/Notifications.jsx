@@ -8,4 +8,8 @@ const initialNotifications = [
   { id: 3, type: 'system', title: 'Security Alert', message: 'New login detected from a Chrome browser on Mac.', time: '3 hours ago', read: true },
 ]
 
+const Notifications = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+}
+
 export default Notifications
