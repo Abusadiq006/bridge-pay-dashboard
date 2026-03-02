@@ -50,6 +50,7 @@ const Notifications = () => {
                           <h3 className={`text-sm font-bold ${n.read ? 'text-gray-900' : 'text-purple-900'}`}>{n.title}</h3>
                           <span className="text-xs text-gray-400">{n.time}</span>
                         </div>
+                        <p className="text-sm text-gray-600 mt-1">{n.message}</p>
                       </div>
                       </div>
                     ))}
