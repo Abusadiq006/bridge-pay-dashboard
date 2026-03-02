@@ -57,7 +57,7 @@ const Notifications = () => {
                   </div>
                 ) : (
                   <div className="p-20 text-center">
-                    
+                    <Bell className="mx-auto text-gray-200 mb-4" size={48} />
                   </div>
                 )
                 )}
