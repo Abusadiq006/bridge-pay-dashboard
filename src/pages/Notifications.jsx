@@ -44,6 +44,8 @@ const Notifications = () => {
                       }`}>
                         {n.type === 'payment' ? <CheckCircle size={20} /> : n.type === 'payout' ? <Clock size={20} /> : <AlertCircle size={20} />}
                       </div>
+
+                      <div className="flex-1"></div>
                       </div>
                     ))}
                   </div>
