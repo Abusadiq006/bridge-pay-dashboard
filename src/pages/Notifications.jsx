@@ -55,6 +55,11 @@ const Notifications = () => {
                       </div>
                     ))}
                   </div>
+                ) : (
+                  <div className="p-20 text-center">
+                    
+                  </div>
+                )
                 )}
               </div>
             </div>
