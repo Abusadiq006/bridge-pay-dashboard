@@ -23,7 +23,7 @@ const Notifications = () => {
         <div className="flex-1 flex flex-col">
           <Header onMenuClick={() => setIsSidebarOpen(true)} />
 
-          <main></main>
+          <main className="p-4 md:p-8"></main>
         </div>
     </div>
   )
