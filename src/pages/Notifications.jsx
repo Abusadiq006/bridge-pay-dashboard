@@ -15,6 +15,11 @@ const Notifications = () => {
   const markAllRead =() => {
     setNotifications(notifications.map(n => ({ ...n, read: true })))
   }
+
+  return (
+    
+  )
+
 }
 
 export default Notifications
