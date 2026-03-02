@@ -37,7 +37,12 @@ const Notifications = () => {
                 {notifications.length > 0 ? (
                   <div className="divide-y divide-gray-100">
                     {notifications.map((n) => (
-                      <div key={n.id} className={`p-5 flex gap-4 transition-colors ${n.read ? 'bg-white' : 'bg-purple-50/30'}`}></div>
+                      <div key={n.id} className={`p-5 flex gap-4 transition-colors ${n.read ? 'bg-white' : 'bg-purple-50/30'}`}>
+                        <div className={`p-2 rounded-xl h-fit ${
+                        n.type === 'payment' ? 'bg-green-100 text-green-600' : 
+                        n.type === 'payout' ? 'bg-blue-100 text-blue-600' : 'bg-yellow-100 text-yellow-600'
+                      }`}></div>
+                      </div>
                     ))}
                   </div>
                 )}
