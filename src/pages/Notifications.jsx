@@ -11,6 +11,10 @@ const initialNotifications = [
 const Notifications = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [notifications, setNotifications] = useState(initialNotifications)
+
+  const markAllRead =() => {
+    
+  }
 }
 
 export default Notifications
