@@ -8,7 +8,10 @@ const Login = () => {
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
-        
+        e.preventDefault()
+        localStorage.setItem('isLoggedIn', 'true')
+        localStorage.setItem('userToken', 'dummy-token-123')
+        navigate('/dashboard')
     }
 }
 
