@@ -85,6 +85,9 @@ const Login = () => {
                             <h3 className="text-3xl font-bold leading-tight">Fast, secure payouts for your business.</h3>
                             <p className="mt-4 text-purple-100 italic">The most intuitive dashboard for managing international settlements.</p>
                         </div>
+
+                        {/* Abstract decoration */}
+                        
                     </div>
                 </div>
             </div>
