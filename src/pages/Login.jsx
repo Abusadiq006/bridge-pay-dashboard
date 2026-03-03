@@ -72,6 +72,10 @@ const Login = () => {
                                 Sign In
                             </button>
                         </form>
+
+                        <p>
+                            Don't have an account? {' '}
+                        </p>
                     </div>
                 </div>
             </div>
