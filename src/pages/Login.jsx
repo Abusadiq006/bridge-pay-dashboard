@@ -66,6 +66,10 @@ const Login = () => {
                                 </label>
                                 <a href="#" className="text-purple-600 font-medium hover:underline">Forgot Password</a>
                             </div>
+
+                            <button type="submit">
+                                Sign In
+                            </button>
                         </form>
                     </div>
                 </div>
