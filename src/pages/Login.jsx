@@ -80,7 +80,12 @@ const Login = () => {
                     </div>
 
                     {/* Right Side: Branding/Visual (Hidden on mobile) */}
-                    <div></div>
+                    <div>
+                        <div>
+                            <h3>Fast, secure payouts for your business.</h3>
+                            <p>The most intuitive dashboard for managing international settlements.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
