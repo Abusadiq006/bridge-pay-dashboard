@@ -17,7 +17,11 @@ const Login = () => {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50">
             <div className="max-w-4xl w-full bg-white md:rounded-2xl md:shadow-xl flex overflow-hidden">
-                
+
+                {/* Left Side: Form */}
+                <div className="w-full md:w-1/2 p-8 md:p-12">
+                    <div className="mb-10"></div>
+                </div>
             </div>
         </div>
     )
