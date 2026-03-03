@@ -78,6 +78,9 @@ const Login = () => {
                             <Link to="/signup" className="text-purple-600 font-bold hover:underline">Create account</Link>
                         </p>
                     </div>
+
+                    {/* Right Side: Branding/Visual (Hidden on mobile) */}
+                    <div></div>
                 </div>
             </div>
         </div>
