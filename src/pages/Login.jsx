@@ -16,7 +16,9 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            
+            <div className="max-w-4xl w-full bg-white md:rounded-2xl md:shadow-xl flex overflow-hidden">
+                
+            </div>
         </div>
     )
 }
