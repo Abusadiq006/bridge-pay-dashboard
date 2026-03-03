@@ -22,7 +22,7 @@ const Login = () => {
                 <div className="w-full md:w-1/2 p-8 md:p-12">
                     <div className="mb-10">
                         <div className="w-10 h-10 bg-purple-600 rounded-xl mb-4">
-                            
+                            <h2 className="text-2xl font-bold text-gray-900">Welcome Back</h2>
                         </div>
                     </div>
                 </div>
