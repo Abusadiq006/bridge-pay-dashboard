@@ -13,6 +13,10 @@ const Login = () => {
         localStorage.setItem('userToken', 'dummy-token-123')
         navigate('/dashboard')
     }
+
+    return (
+        
+    )
 }
 
 export default Login
