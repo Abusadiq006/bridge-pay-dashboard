@@ -25,6 +25,8 @@ const Login = () => {
                             <h2 className="text-2xl font-bold text-gray-900">Welcome Back</h2>
                             <p className="text-gray-500 mt-2 text-sm">Log in to manage your BridgePay dashboard.</p>
                         </div>
+
+                        <form onSubmit={handleSubmit} className="space-y-5"></form>
                     </div>
                 </div>
             </div>
