@@ -89,7 +89,10 @@ const Login = () => {
                         {/* Abstract decoration */}
                         <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-purple-500 rounded-full opacity-50"></div>
                         <div className="absolute top-20 -left-10 w-32 h-32 bg-purple-400 rounded-full opacity-30"></div>
+                            © 2026 BridgePay Dashboard
+                        <div >
 
+                        </div>
                     </div>
                 </div>
             </div>
