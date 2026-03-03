@@ -29,6 +29,7 @@ const Login = () => {
                         <form onSubmit={handleSubmit} className="space-y-5">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <div className="relative"></div>
                             </div>
                         </form>
                     </div>
