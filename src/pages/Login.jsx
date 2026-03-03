@@ -49,6 +49,13 @@ const Login = () => {
                                         className="w-full pl-10 pr-12 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
                                         onChange={(e) => setFormData({...formData, password: e.target.value})}
                                     />
+                                    <button 
+                                        type="button"
+                                        onClick={() => setShowPassword(!showPassword)}
+                                        className="absolute right-3 top-3 text-gray-400 hover:text-gray-600"
+                                    >
+                                        {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                                    </button>
                                 </div>
                             </div>
                         </form>
