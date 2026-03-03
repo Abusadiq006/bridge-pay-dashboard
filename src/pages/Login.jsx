@@ -23,6 +23,7 @@ const Login = () => {
                     <div className="mb-10">
                         <div className="w-10 h-10 bg-purple-600 rounded-xl mb-4">
                             <h2 className="text-2xl font-bold text-gray-900">Welcome Back</h2>
+                            <p className="text-gray-500 mt-2 text-sm">Log in to manage your BridgePay dashboard.</p>
                         </div>
                     </div>
                 </div>
