@@ -7,11 +7,13 @@ import Market from "./pages/Market";
 import SupportChat from "./pages/SupportChat"
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications"
+import Login from './pages/Login'
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/dashboard/payouts" element={<CommAndPayouts />} />
