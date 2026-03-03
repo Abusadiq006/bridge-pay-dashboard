@@ -62,6 +62,7 @@ const Login = () => {
                             <div className="">
                                 <label htmlFor="">
                                     <input type="text" />
+                                    <span>Remember me</span>
                                 </label>
                             </div>
                         </form>
