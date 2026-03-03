@@ -59,10 +59,10 @@ const Login = () => {
                                 </div>
                             </div>
 
-                            <div className="">
-                                <label htmlFor="">
-                                    <input type="text" />
-                                    <span>Remember me</span>
+                            <div className="flex items-center justify-between text-sm">
+                                <label className="flex items-center gap-2 cursor-pointer">
+                                    <input type="checkbox" className="rounded border-gray-300 text-purple-600 focus:ring-purple-500" />
+                                    <span className="text-gray-600">Remember me</span>
                                 </label>
                             </div>
                         </form>
