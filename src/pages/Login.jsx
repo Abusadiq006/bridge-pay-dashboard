@@ -80,10 +80,10 @@ const Login = () => {
                     </div>
 
                     {/* Right Side: Branding/Visual (Hidden on mobile) */}
-                    <div>
-                        <div>
-                            <h3>Fast, secure payouts for your business.</h3>
-                            <p>The most intuitive dashboard for managing international settlements.</p>
+                    <div className="hidden md:flex md:w-1/2 bg-purple-600 p-12 flex-col justify-between text-white relative overflow-hidden">
+                        <div className="relative z-10">
+                            <h3 className="text-3xl font-bold leading-tight">Fast, secure payouts for your business.</h3>
+                            <p className="mt-4 text-purple-100 italic">The most intuitive dashboard for managing international settlements.</p>
                         </div>
                     </div>
                 </div>
