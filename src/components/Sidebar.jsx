@@ -1,9 +1,25 @@
 import { Home, LayoutDashboard, CreditCard, Settings, LogOut, X, Plus, Speech, Text } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom'; // 1. Added useNavigate
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
-  // 2. Get current location to highlight the active link
   const location = useLocation();
+  const navigate = useNavigate(); // 2. Initialize the navigation hook
+
+  // 3. The Logout Functionality
+  const handleLogout = () => {
+    // Clear auth data (we'll use these keys once we build the backend)
+    localStorage.removeItem('userToken');
+    localStorage.removeItem('isLoggedIn');
+    
+    // Close sidebar (for mobile)
+    setIsOpen(false);
+    
+    // Redirect to home or login page
+    navigate('/login'); 
+    
+    // Optional: Refresh the page to ensure all states are reset
+    // window.location.reload(); 
+  };
 
   const navItems = [
     { icon: Home, label: 'Home', path: '/' },
@@ -45,18 +61,16 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           {/* Nav Links */}
           <nav className="flex-1 space-y-2">
             {navItems.map((item) => {
-              // 3. Check if current path matches the link path
               const isActive = location.pathname === item.path;
               
               return (
-                // 4. Replace <a> with <Link>
                 <Link
                   key={item.label}
                   to={item.path}
-                  onClick={() => setIsOpen(false)} // Close sidebar on mobile after clicking
+                  onClick={() => setIsOpen(false)}
                   className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
                     isActive 
-                      ? 'bg-purple-50 text-purple-600 font-medium' // Updated text-brand-purple to purple-600 for consistency
+                      ? 'bg-purple-50 text-purple-600 font-medium' 
                       : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
                   }`}
                 >
@@ -67,8 +81,11 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             })}
           </nav>
 
-          {/* Logout */}
-          <button className="flex items-center gap-3 px-4 py-3 text-gray-500 hover:text-red-500 transition-colors mt-auto">
+          {/* Logout - Now Active */}
+          <button 
+            onClick={handleLogout} // 4. Added onClick handler
+            className="flex items-center gap-3 px-4 py-3 text-gray-500 hover:text-red-500 transition-colors mt-auto w-full rounded-xl hover:bg-red-50"
+          >
             <LogOut size={20} />
             Logout
           </button>
