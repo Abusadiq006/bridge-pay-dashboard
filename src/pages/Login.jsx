@@ -26,7 +26,11 @@ const Login = () => {
                             <p className="text-gray-500 mt-2 text-sm">Log in to manage your BridgePay dashboard.</p>
                         </div>
 
-                        <form onSubmit={handleSubmit} className="space-y-5"></form>
+                        <form onSubmit={handleSubmit} className="space-y-5">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
