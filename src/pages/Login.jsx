@@ -59,7 +59,11 @@ const Login = () => {
                                 </div>
                             </div>
 
-                            <div className=""></div>
+                            <div className="">
+                                <label htmlFor="">
+                                    <input type="text" />
+                                </label>
+                            </div>
                         </form>
                     </div>
                 </div>
