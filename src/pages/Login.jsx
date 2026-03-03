@@ -42,6 +42,13 @@ const Login = () => {
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Password</label>
                                 <div className="relative">
                                     <Lock className="absolute left-3 top-3 text-gray-400" size={18} />
+                                    <input 
+                                        type={showPassword ? "text" : "password"}
+                                        required
+                                        placeholder="••••••••"
+                                        className="w-full pl-10 pr-12 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                                        onChange={(e) => setFormData({...formData, password: e.target.value})}
+                                    />
                                 </div>
                             </div>
                         </form>
