@@ -30,6 +30,7 @@ const Signup = () => {
                         <div>
                             <div></div>
                         </div>
+                        <h3>Scale your business with global payouts.</h3>
                     </div>
                 </div>
             </div>
