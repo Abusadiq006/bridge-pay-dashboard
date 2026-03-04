@@ -43,6 +43,7 @@ const Signup = () => {
                             </li>
                             <li>
                                 <CheckCircle2 />
+                                <span>Bank-grade security and encryption.</span>
                             </li>
                         </ul>
                     </div>
