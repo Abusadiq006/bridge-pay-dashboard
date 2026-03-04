@@ -35,6 +35,7 @@ const Signup = () => {
                         <ul>
                             <li>
                                 <CheckCircle2 />
+                                <span></span>
                             </li>
                         </ul>
                     </div>
