@@ -27,7 +27,7 @@ const Signup = () => {
                 {/* Left Side: Branding/ Value prop */}
                 <div>
                     <div>
-                        <div>
+                        <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-xl mb-8 flex items-center justify-center">
                             <div className="w-6 h-6 bg-white rounded-md"></div>
                         </div>
                         <h3 className="text-3xl font-bold leading-tight mb-6">Scale your business with global payouts.</h3>
