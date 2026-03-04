@@ -25,7 +25,7 @@ const Signup = () => {
             <div>
 
                 {/* Left Side: Branding/ Value prop */}
-                <div className="hidden md:flex md:w-1/2 bg-purple-600 p-12 flex-col justify-between text-white relative">
+                <div className=" md:flex md:w-1/2 bg-purple-600 p-12 flex-col justify-between text-white relative">
                     <div className="relative z-10">
                         <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-xl mb-8 flex items-center justify-center">
                             <div className="w-6 h-6 bg-white rounded-md"></div>
@@ -35,9 +35,10 @@ const Signup = () => {
                         <ul>
                             <li>
                                 <CheckCircle2 />
-                                <span></span>
+                                <span>Instant settlement in multiple currencies.</span>
                             </li>
                         </ul>
+                        <li></li>
                     </div>
                 </div>
             </div>
