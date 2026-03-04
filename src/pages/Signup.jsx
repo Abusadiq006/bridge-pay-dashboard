@@ -10,6 +10,11 @@ const Signup = () => {
         email: '',
         password: ''
     })
+    const navigate = useNavigate()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 }
 
 export default Signup
