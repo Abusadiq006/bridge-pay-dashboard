@@ -37,7 +37,7 @@ const Signup = () => {
                                 <CheckCircle2 size={20} className="text-purple-300"/>
                                 <span>Instant settlement in multiple currencies.</span>
                             </li>
-                            <li>
+                            <li className="flex items-center gap-3 text-purple-100">
                                 <CheckCircle2 />
                                 <span>Integration with Paystack & Flutterwave.</span>
                             </li>
