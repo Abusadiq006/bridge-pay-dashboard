@@ -26,7 +26,7 @@ const Signup = () => {
 
                 {/* Left Side: Branding/ Value prop */}
                 <div>
-                    
+                    <div></div>
                 </div>
             </div>
         </div>
