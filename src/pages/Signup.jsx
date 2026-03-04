@@ -17,6 +17,7 @@ const Signup = () => {
         console.log("Creating account for:", formData)
 
         alert("Account created successfully! Please log in.")
+        navigate('/login')
     }
 }
 
