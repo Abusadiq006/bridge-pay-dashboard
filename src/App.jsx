@@ -8,12 +8,12 @@ import SupportChat from "./pages/SupportChat"
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications"
 import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/dashboard/payouts" element={<CommAndPayouts />} />
@@ -22,6 +22,8 @@ function App() {
         <Route path="/dashboard/support" element={<SupportChat />} />
         <Route path="/dashboard/settings" element={<Settings />} />
         <Route path="/dashboard/notifications" element={<Notifications />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     </Router>
   )
