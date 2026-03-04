@@ -4,7 +4,12 @@ import { Eye, EyeOff, Lock, Mail, User, Building2, CheckCircle } from 'lucide-re
 
 const Signup = () => {
     const [showPassword, setShowPassword] = useState(false)
-    
+    const [formData, setFormData] = useState({
+        fullName: '',
+        businessName: '',
+        email: '',
+        password: ''
+    })
 }
 
 export default Signup
