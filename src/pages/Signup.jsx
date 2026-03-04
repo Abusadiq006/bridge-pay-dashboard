@@ -37,10 +37,11 @@ const Signup = () => {
                                 <CheckCircle2 />
                                 <span>Instant settlement in multiple currencies.</span>
                             </li>
+                            <li>
+                                <CheckCircle2 />
+                                <span>Integration with Paystack & Flutterwave.</span>
+                            </li>
                         </ul>
-                        <li>
-                            <CheckCircle2 />
-                        </li>
                     </div>
                 </div>
             </div>
