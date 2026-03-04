@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { Eye, EyeOff, Lock, Mail, User, Building2, CheckCircle } from 'lucide-react'
+import { Eye, EyeOff, Lock, Mail, User, Building2, CheckCircle, CheckCircle2 } from 'lucide-react'
 
 const Signup = () => {
     const [showPassword, setShowPassword] = useState(false)
@@ -33,7 +33,9 @@ const Signup = () => {
                         <h3 className="text-3xl font-bold leading-tight mb-6">Scale your business with global payouts.</h3>
 
                         <ul>
-                            <li></li>
+                            <li>
+                                <CheckCircle2 />
+                            </li>
                         </ul>
                     </div>
                 </div>
