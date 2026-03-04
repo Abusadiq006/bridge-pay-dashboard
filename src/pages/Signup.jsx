@@ -38,7 +38,9 @@ const Signup = () => {
                                 <span>Instant settlement in multiple currencies.</span>
                             </li>
                         </ul>
-                        <li></li>
+                        <li>
+                            <CheckCircle2 />
+                        </li>
                     </div>
                 </div>
             </div>
