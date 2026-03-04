@@ -41,6 +41,9 @@ const Signup = () => {
                                 <CheckCircle2 />
                                 <span>Integration with Paystack & Flutterwave.</span>
                             </li>
+                            <li>
+                                <CheckCircle2 />
+                            </li>
                         </ul>
                     </div>
                 </div>
