@@ -14,6 +14,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        console.log("Creating account for:", formData)
     }
 }
 
