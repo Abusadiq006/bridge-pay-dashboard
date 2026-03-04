@@ -19,6 +19,15 @@ const Signup = () => {
         alert("Account created successfully! Please log in.")
         navigate('/login')
     }
+
+    return (
+        <div>
+            <div>
+
+                
+            </div>
+        </div>
+    )
 }
 
 export default Signup
