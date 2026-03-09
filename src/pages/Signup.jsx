@@ -56,7 +56,7 @@ const Signup = () => {
                 {/* Right Side: Signup Form */}
                 <div className="w-full md:w-1/2 p-8 md:p">
                     <div className="mb-8">
-                        <h2>Create your account</h2>
+                        <h2 className="text-2xl font-bold text-gray-900">Create your account</h2>
                         <p>Start managing your fintech operations today.</p>
                     </div>
                 </div>
