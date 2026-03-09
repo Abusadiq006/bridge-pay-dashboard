@@ -93,6 +93,7 @@ const Signup = () => {
                         <label className="">Work Email</label>
                         <div>
                             <Mail />
+                            <input />
                         </div>
                     </div>
                 </form>
