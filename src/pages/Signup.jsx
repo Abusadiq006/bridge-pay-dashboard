@@ -61,6 +61,8 @@ const Signup = () => {
                     </div>
                 </div>
                 
+                <form onSubmit={handleSubmit} className=""></form>
+
             </div>
         </div>
     )
