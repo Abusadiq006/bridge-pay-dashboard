@@ -103,7 +103,9 @@ const Signup = () => {
                     </div>
 
                     {/* Password */}
-                    <div></div>
+                    <div>
+                        <label >Password</label>
+                    </div>
                 </form>
 
             </div>
