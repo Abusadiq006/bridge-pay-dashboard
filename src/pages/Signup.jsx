@@ -66,7 +66,7 @@ const Signup = () => {
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1.5">Full Name</label>
                         <div className="relative">
-                            <User />
+                            <User className="absolute left-3 top-3 text-gray-400" size={18}/>
                             <input type="text" />
                         </div>
                     </div>
