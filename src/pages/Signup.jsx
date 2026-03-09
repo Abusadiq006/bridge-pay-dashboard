@@ -80,6 +80,7 @@ const Signup = () => {
                         <label>Business Name</label>
                         <div>
                             <Building2 />
+                            <input type="text" />
                         </div>
                     </div>
                 </form>
