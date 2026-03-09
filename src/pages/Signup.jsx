@@ -107,6 +107,10 @@ const Signup = () => {
                         <label >Password</label>
                         <div>
                             <Lock/>
+                            <input type="text" 
+                            required
+                            className=""
+                            />
                         </div>
                     </div>
                 </form>
