@@ -87,6 +87,9 @@ const Signup = () => {
                             />
                         </div>
                     </div>
+
+                    {/* Email */}
+                    <div></div>
                 </form>
 
             </div>
