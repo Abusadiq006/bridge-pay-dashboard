@@ -91,8 +91,8 @@ const Signup = () => {
                     {/* Email */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1.5">Work Email</label>
-                        <div>
-                            <Mail />
+                        <div className="relative">
+                            <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
                             <input />
                         </div>
                     </div>
