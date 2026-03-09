@@ -123,7 +123,9 @@ const Signup = () => {
                         </div>
                         <p className="text-[10px] text-gray-400 mt-1">Must be at least 8 characters with a symbol.</p>
                     </div>
-                    <button>Create Account</button>
+                    <button type='submit'
+                        className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounderd-xl mt-2 transition-all shadow-lg shadow-purple-100"
+                    >Create Account</button>
                 </form>
 
             </div>
