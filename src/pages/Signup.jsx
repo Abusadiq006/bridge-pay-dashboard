@@ -121,7 +121,7 @@ const Signup = () => {
                                     {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                             </button>
                         </div>
-                        <p>Must be at least 8 characters with a symbol.</p>
+                        <p className="text-[10px] text-gray-400 mt-1">Must be at least 8 characters with a symbol.</p>
                     </div>
                 </form>
 
