@@ -77,7 +77,7 @@ const Signup = () => {
 
                     {/* Business Name */}
                     <div>
-                        <label>Business Name</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1.5">Business Name</label>
                         <div>
                             <Building2 />
                             <input type="text" />
