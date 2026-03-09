@@ -123,6 +123,7 @@ const Signup = () => {
                         </div>
                         <p className="text-[10px] text-gray-400 mt-1">Must be at least 8 characters with a symbol.</p>
                     </div>
+                    <button>Create Account</button>
                 </form>
 
             </div>
