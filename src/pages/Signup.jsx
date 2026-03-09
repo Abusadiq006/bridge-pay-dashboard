@@ -105,6 +105,9 @@ const Signup = () => {
                     {/* Password */}
                     <div>
                         <label >Password</label>
+                        <div>
+                            <Lock/>
+                        </div>
                     </div>
                 </form>
 
