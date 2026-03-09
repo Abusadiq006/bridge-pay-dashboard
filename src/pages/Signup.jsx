@@ -65,6 +65,9 @@ const Signup = () => {
                     {/* Full Name */}
                     <div>
                         <label >Full Name</label>
+                        <div>
+                            <User />
+                        </div>
                     </div>
                 </form>
 
