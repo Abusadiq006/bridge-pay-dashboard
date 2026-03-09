@@ -91,6 +91,9 @@ const Signup = () => {
                     {/* Email */}
                     <div>
                         <label className="">Work Email</label>
+                        <div>
+                            <Mail />
+                        </div>
                     </div>
                 </form>
 
