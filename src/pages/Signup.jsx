@@ -76,6 +76,9 @@ const Signup = () => {
                     </div>
 
                     {/* Business Name */}
+                    <div>
+                        <label>Business Name</label>
+                    </div>
                 </form>
 
             </div>
