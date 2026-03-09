@@ -48,7 +48,7 @@ const Signup = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="relative z-10 text-sm text-purple-200">
                         Join 5,000+ businesses using BridgePay.
                     </div>
                 </div>
