@@ -90,7 +90,7 @@ const Signup = () => {
 
                     {/* Email */}
                     <div>
-                        <label className="">Work Email</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1.5">Work Email</label>
                         <div>
                             <Mail />
                             <input />
