@@ -112,6 +112,12 @@ const Signup = () => {
                                 className="w-full pl-10 pr-12 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-purple-500 outline-none"
                                 onChange={(e) => setFormData({...formData, password: e.target.value})}
                             />
+                            
+                            <button
+                                type="button"
+                                >
+
+                            </button>
                         </div>
                     </div>
                 </form>
