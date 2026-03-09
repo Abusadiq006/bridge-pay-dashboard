@@ -54,6 +54,11 @@ const Signup = () => {
                 </div>
 
                 {/* Right Side: Signup Form */}
+                <div>
+                    <div>
+                        <h2>Create your account</h2>
+                    </div>
+                </div>
                 
             </div>
         </div>
