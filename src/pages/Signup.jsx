@@ -53,6 +53,7 @@ const Signup = () => {
                     </div>
                 </div>
 
+                {/* Right Side: Signup Form */}
                 
             </div>
         </div>
