@@ -128,8 +128,10 @@ const Signup = () => {
                     >Create Account</button>
                 </form>
 
-                <p>Already have an Account? {' '}
-                    <Link to="/Login">Log in</Link>
+                <p className='mt-6 text-center text-sm text-gray-600'>Already have an Account? {' '}
+                    <Link to="/Login"
+                        className='text-purple-600 font-bold hover:underline'
+                    >Log in</Link>
                 </p>
 
             </div>
