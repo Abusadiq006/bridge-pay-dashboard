@@ -57,6 +57,7 @@ const Signup = () => {
                 <div>
                     <div>
                         <h2>Create your account</h2>
+                        <p>Start managing your fintech operations today.</p>
                     </div>
                 </div>
                 
