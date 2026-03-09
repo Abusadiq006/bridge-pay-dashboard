@@ -47,7 +47,13 @@ const Signup = () => {
                             </li>
                         </ul>
                     </div>
+
+                    <div>
+                        Join 5,000+ businesses using BridgePay.
+                    </div>
                 </div>
+
+                
             </div>
         </div>
     )
