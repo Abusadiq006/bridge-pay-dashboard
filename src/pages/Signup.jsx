@@ -104,7 +104,7 @@ const Signup = () => {
 
                     {/* Password */}
                     <div>
-                        <label >Password</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-1.5" >Password</label>
                         <div>
                             <Lock/>
                             <input type="text" 
