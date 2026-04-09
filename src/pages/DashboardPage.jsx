@@ -34,6 +34,9 @@ const DashboardPage() {
   } finally {
     setLoading(false)
   }
+}
+
+fetchProfile()
 )
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
