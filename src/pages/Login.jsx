@@ -10,7 +10,9 @@ const Login = async (e) => {
     console.log('Login successful:', data)
 
     navigate('/dashboard')
-  } catch (err) {}
+  } catch (err) {
+    SpeechSynthesisErrorEvent(err.error || 'Something went wrong')
+  }
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
