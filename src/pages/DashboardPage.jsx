@@ -29,7 +29,8 @@ const DashboardPage() {
       })
 
       setUser(response.data.user)
-  })
+  } catch (error) {}
+)
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
