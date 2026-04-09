@@ -11,24 +11,38 @@ const Login = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  // 2. Consolidate the Submit Logic
+ // 2. Consolidate the Submit Logic
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError(''); // Clear previous errors
+    setError(''); 
 
     try {
-      // Connect to your real backend here
-      // const data = await loginUser(formData.email, formData.password);
-      
-      // For now, simulate success
-      localStorage.setItem('isLoggedIn', 'true');
-      localStorage.setItem('userToken', 'dummy-token-123');
-      
-      console.log('Login successful');
-      navigate('/dashboard');
+      // 1. Send the login request to your backend
+      const response = await axios.post('http://localhost:5000/api/auth/login', {
+        email: formData.email,
+        password: formData.password
+      });
+
+      // 2. Extract the token from your backend response
+      // (Your backend sends it as response.data.token)
+      const token = response.data.token;
+
+      if (token) {
+        // 3. Save the token so the Dashboard can use it for the Profile route
+        localStorage.setItem('token', token);
+        localStorage.setItem('isLoggedIn', 'true');
+        
+        console.log('Login successful');
+        navigate('/dashboard');
+      } else {
+        throw new Error("No token received from server");
+      }
+
     } catch (err) {
-      setError(err.error || 'Invalid credentials. Please try again.');
+      // 4. Handle errors (e.g., "Invalid login credentials")
+      console.error("Login error:", err);
+      setError(err.response?.data?.error || 'Invalid credentials. Please try again.');
     } finally {
       setLoading(false);
     }
