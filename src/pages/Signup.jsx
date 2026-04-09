@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, Form } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail, User, Building2, CheckCircle2 } from 'lucide-react';
 
 const Signup = () => {
@@ -18,6 +18,7 @@ const Signup = () => {
       const response = await axios.post('http://localhost:5000/api/auth/register', {
         email: formData.email,
         password: formData.password,
+        fullName: FormData.fullName
       })
     }
     // Later, we will connect this to your Node.js/Express backend
