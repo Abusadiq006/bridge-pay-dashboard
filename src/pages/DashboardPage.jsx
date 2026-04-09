@@ -18,6 +18,7 @@ const DashboardPage() {
 
   useEffect(() = {
     const fetchProfile = async () => {
+      try {}
   })
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
