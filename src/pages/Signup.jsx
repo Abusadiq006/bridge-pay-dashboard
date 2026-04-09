@@ -7,7 +7,7 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false); // Added loading state
   const [formData, setFormData] = useState({
-    fullName: '',
+    full_name: '',
     businessName: '',
     email: '',
     password: ''
@@ -24,7 +24,7 @@ const Signup = () => {
       const response = await axios.post('http://localhost:5000/api/auth/register', {
         email: formData.email,
         password: formData.password,
-        fullName: formData.fullName,
+        full_name: formData.full_name,
         businessName: formData.businessName
       });
 
@@ -151,7 +151,7 @@ const Signup = () => {
               className={`w-full ${loading ? 'bg-purple-400' : 'bg-purple-600 hover:bg-purple-700'} text-white font-semibold py-3 rounded-xl mt-2 transition-all shadow-lg shadow-purple-100`}
             >
                 {loading ? 'Creating Account...' : 'Create Account'}
-            </button>
+          </button>
           </form>
 
           <p className="mt-6 text-center text-sm text-gray-600">
