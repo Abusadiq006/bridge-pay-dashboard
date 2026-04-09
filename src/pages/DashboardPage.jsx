@@ -16,7 +16,9 @@ const DashboardPage() {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
 
-  useEffect(() = {})
+  useEffect(() = {
+    const fetchProfile = async () => {
+  })
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
