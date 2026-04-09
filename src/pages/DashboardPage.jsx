@@ -16,6 +16,8 @@ const DashboardPage() {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
 
+  useEffect(() = {})
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
