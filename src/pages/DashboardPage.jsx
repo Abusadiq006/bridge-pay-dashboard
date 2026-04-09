@@ -11,6 +11,7 @@ import axios from 'axios'
 
 // Import our mock data
 import mockData from '../data/mockData.json';
+import { response } from 'express';
 
 const DashboardPage() {
   const [user, setUser] = useState(null)
@@ -25,7 +26,9 @@ const DashboardPage() {
           headers: {
             Authorization: `Bearer ${token}`
           }
-      }
+      })
+
+      setUser(response.data.user)
   })
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
