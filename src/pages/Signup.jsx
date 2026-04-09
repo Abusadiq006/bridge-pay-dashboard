@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate, Link, Form } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Removed 'Form' (unused)
 import { Eye, EyeOff, Lock, Mail, User, Building2, CheckCircle2 } from 'lucide-react';
+import axios from 'axios'; // 1. ADDED THIS IMPORT
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false); // Added loading state
   const [formData, setFormData] = useState({
     fullName: '',
     businessName: '',
@@ -12,28 +14,30 @@ const Signup = () => {
   });
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  // 2. MARKED AS ASYNC
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    
     try {
+      // 3. CORRECTED VARIABLE NAME (formData)
       const response = await axios.post('http://localhost:5000/api/auth/register', {
         email: formData.email,
         password: formData.password,
-        fullName: FormData.fullName
-      })
+        fullName: formData.fullName,
+        businessName: formData.businessName
+      });
 
       if (response.status === 201 || response.status === 200) {
-        navigate('/login')
+        alert("Account created successfully! Please log in.");
+        navigate('/login');
       }
     } catch (err) {
-      console.error("Signup Error:", err.response?.data)
-      alert(err.response?.data?.error || "Registration failed")
+      console.error("Signup Error:", err.response?.data);
+      alert(err.response?.data?.error || "Registration failed. Check your console.");
+    } finally {
+      setLoading(false);
     }
-    // Later, we will connect this to your Node.js/Express backend
-    console.log("Creating account for:", formData);
-    
-    // Simulate successful registration
-    alert("Account created successfully! Please log in.");
-    navigate('/login');
   };
 
   return (
