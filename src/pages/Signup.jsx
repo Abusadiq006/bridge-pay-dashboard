@@ -24,7 +24,7 @@ const Signup = () => {
       if (response.status === 201 || response.status === 200) {
         navigate('/login')
       }
-    }
+    } catch (err) {}
     // Later, we will connect this to your Node.js/Express backend
     console.log("Creating account for:", formData);
     
