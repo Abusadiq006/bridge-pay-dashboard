@@ -5,6 +5,9 @@ import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 const Login = async (e) => {
   e.preventDefault()
   setLoading(true)
+  try {
+    
+  }
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
