@@ -14,6 +14,7 @@ import mockData from '../data/mockData.json';
 
 const DashboardPage() {
   const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
