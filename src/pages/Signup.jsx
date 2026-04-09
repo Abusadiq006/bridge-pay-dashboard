@@ -14,6 +14,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    try {}
     // Later, we will connect this to your Node.js/Express backend
     console.log("Creating account for:", formData);
     
