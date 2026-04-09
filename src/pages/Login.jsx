@@ -10,7 +10,7 @@ const Login = async (e) => {
     console.log('Login successful:', data)
 
     navigate('/dashboard')
-  }
+  } catch (err) {}
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
