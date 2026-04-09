@@ -26,6 +26,7 @@ const Signup = () => {
       }
     } catch (err) {
       console.error("Signup Error:", err.response?.data)
+      alert(err.response?.data?.error || "Registration failed")
     }
     // Later, we will connect this to your Node.js/Express backend
     console.log("Creating account for:", formData);
