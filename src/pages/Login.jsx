@@ -1,30 +1,37 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
+// import { loginUser } from '../api/auth'; // Ensure you import your login logic
 
-const Login = async (e) => {
-  e.preventDefault()
-  setLoading(true)
-  try {
-    const data = await loginUser(email, password)
-    console.log('Login successful:', data)
-
-    navigate('/dashboard')
-  } catch (err) {
-    SpeechSynthesisErrorEvent(err.error || 'Something went wrong')
-  } finally {
-    setLoading(false)
-  }
+const Login = () => {
+  // 1. Move Hooks to the Top
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // For now, we'll simulate a login
-    localStorage.setItem('isLoggedIn', 'true');
-    localStorage.setItem('userToken', 'dummy-token-123');
-    navigate('/dashboard');
+  // 2. Consolidate the Submit Logic
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(''); // Clear previous errors
+
+    try {
+      // Connect to your real backend here
+      // const data = await loginUser(formData.email, formData.password);
+      
+      // For now, simulate success
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('userToken', 'dummy-token-123');
+      
+      console.log('Login successful');
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.error || 'Invalid credentials. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -39,6 +46,13 @@ const Login = async (e) => {
             <p className="text-gray-500 mt-2 text-sm">Log in to manage your BridgePay dashboard.</p>
           </div>
 
+          {/* Show Error Message if it exists */}
+          {error && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg">
+              {error}
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
@@ -48,7 +62,8 @@ const Login = async (e) => {
                   type="email"
                   required
                   placeholder="name@company.com"
-                  className="w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                  className="w-full pl-10 pr-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 outline-none"
+                  value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
                 />
               </div>
@@ -62,7 +77,8 @@ const Login = async (e) => {
                   type={showPassword ? "text" : "password"}
                   required
                   placeholder="••••••••"
-                  className="w-full pl-10 pr-12 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                  className="w-full pl-10 pr-12 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 outline-none"
+                  value={formData.password}
                   onChange={(e) => setFormData({...formData, password: e.target.value})}
                 />
                 <button 
@@ -75,19 +91,12 @@ const Login = async (e) => {
               </div>
             </div>
 
-            <div className="flex items-center justify-between text-sm">
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="rounded border-gray-300 text-purple-600 focus:ring-purple-500" />
-                <span className="text-gray-600">Remember me</span>
-              </label>
-              <a href="#" className="text-purple-600 font-medium hover:underline">Forgot password?</a>
-            </div>
-
             <button 
               type="submit"
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg shadow-purple-200 transition-all active:scale-[0.98]"
+              disabled={loading}
+              className={`w-full ${loading ? 'bg-purple-400' : 'bg-purple-600 hover:bg-purple-700'} text-white font-semibold py-3 rounded-xl transition-all`}
             >
-              LogIn
+              {loading ? 'Logging in...' : 'Log In'}
             </button>
           </form>
 
@@ -97,22 +106,16 @@ const Login = async (e) => {
           </p>
         </div>
 
-        {/* Right Side: Branding/Visual (Hidden on mobile) */}
+        {/* Right Side: Branding */}
         <div className="hidden md:flex md:w-1/2 bg-purple-600 p-12 flex-col justify-between text-white relative overflow-hidden">
           <div className="relative z-10">
             <h3 className="text-3xl font-bold leading-tight">Fast, secure payouts for your business.</h3>
             <p className="mt-4 text-purple-100 italic">"The most intuitive dashboard for managing international settlements."</p>
           </div>
-          
-          {/* Abstract decoration */}
-          <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-purple-500 rounded-full opacity-50"></div>
-          <div className="absolute top-20 -left-10 w-32 h-32 bg-purple-400 rounded-full opacity-30"></div>
-          
           <div className="relative z-10 text-sm text-purple-200">
             © 2026 BridgePay Dashboard
           </div>
         </div>
-
       </div>
     </div>
   );
