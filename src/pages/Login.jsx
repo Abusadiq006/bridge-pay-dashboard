@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 
-const Login = () => {
+const Login = async (e) => {
+  e.preventDefault()
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
