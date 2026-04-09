@@ -6,6 +6,8 @@ export const loginUser = async (email, password) => {
     try {
         const response = await axios.post(`${API_URL}/login`, { email, password }); 
     
-        if (response.data.token) {}
+        if (response.data.token) {
+            localStorage.setItem('token', response.data.token)
+        }
     }
 }
