@@ -12,7 +12,9 @@ import axios from 'axios'
 // Import our mock data
 import mockData from '../data/mockData.json';
 
-function DashboardPage() {
+const DashboardPage() {
+  const [user, setUser] = useState(null)
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
