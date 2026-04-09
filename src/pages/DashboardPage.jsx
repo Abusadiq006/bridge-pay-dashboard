@@ -32,7 +32,7 @@ const DashboardPage() {
   } catch (error) {
     console.error("Failed to fetch profile:", error)
   } finally {
-    
+    setLoading(false)
   }
 )
 
