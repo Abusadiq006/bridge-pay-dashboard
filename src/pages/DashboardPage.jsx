@@ -31,6 +31,8 @@ const DashboardPage() {
       setUser(response.data.user)
   } catch (error) {
     console.error("Failed to fetch profile:", error)
+  } finally {
+    
   }
 )
 
