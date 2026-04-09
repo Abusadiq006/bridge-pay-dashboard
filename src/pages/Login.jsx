@@ -9,7 +9,8 @@ const Login = async (e) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
+    setLoading(true)
     // For now, we'll simulate a login
     localStorage.setItem('isLoggedIn', 'true');
     localStorage.setItem('userToken', 'dummy-token-123');
