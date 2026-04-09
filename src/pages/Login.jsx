@@ -7,6 +7,7 @@ const Login = async (e) => {
   setLoading(true)
   try {
     const data = await loginUser(email, password)
+    console.log('Login successful:', data)
   }
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
