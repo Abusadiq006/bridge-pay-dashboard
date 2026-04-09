@@ -17,6 +17,7 @@ const Signup = () => {
     try {
       const response = await axios.post('http://localhost:5000/api/auth/register', {
         email: formData.email,
+        password: formData.password,
       })
     }
     // Later, we will connect this to your Node.js/Express backend
