@@ -29,7 +29,9 @@ const DashboardPage() {
       })
 
       setUser(response.data.user)
-  } catch (error) {}
+  } catch (error) {
+    console.error("Failed to fetch profile:", error)
+  }
 )
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
