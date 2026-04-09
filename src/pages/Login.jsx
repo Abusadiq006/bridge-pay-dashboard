@@ -4,13 +4,13 @@ import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 
 const Login = async (e) => {
   e.preventDefault()
+  setLoading(true)
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
     // For now, we'll simulate a login
     localStorage.setItem('isLoggedIn', 'true');
     localStorage.setItem('userToken', 'dummy-token-123');
