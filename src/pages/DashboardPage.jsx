@@ -18,7 +18,9 @@ const DashboardPage() {
 
   useEffect(() = {
     const fetchProfile = async () => {
-      try {}
+      try {
+        const token = localStorage.getItem('token')
+      }
   })
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
