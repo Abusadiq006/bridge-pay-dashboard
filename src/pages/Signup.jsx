@@ -14,7 +14,9 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    try {}
+    try {
+      const response = await axios.post('http://localhost:5000/api/auth/register', {})
+    }
     // Later, we will connect this to your Node.js/Express backend
     console.log("Creating account for:", formData);
     
