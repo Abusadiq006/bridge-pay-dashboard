@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import StatCard from '../components/StatCard';
 import FilterTabs from '../components/FilterTabs';
 import TransactionTable from '../components/TransactionTable';
+import axios from 'axios'
 
 // Import our mock data
 import mockData from '../data/mockData.json';
